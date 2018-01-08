@@ -18,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/2018-01-08.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="346">
-                <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <first_editor relative-caret-position="184">
+                <caret line="1" column="286" lean-forward="true" selection-start-line="1" selection-start-column="286" selection-end-line="1" selection-end-column="286" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -110,7 +110,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -140,12 +140,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515376865140</updated>
-      <workItem from="1515376867152" duration="2601000" />
+      <workItem from="1515376867152" duration="2762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2601000" />
+    <option name="totallyTimeSpent" value="2762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="2" width="1936" height="1086" extended-state="0" />
@@ -183,8 +183,8 @@
     <entry file="file://$PROJECT_DIR$/2018-01-08.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="346">
-            <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <first_editor relative-caret-position="184">
+            <caret line="1" column="286" lean-forward="true" selection-start-line="1" selection-start-column="286" selection-end-line="1" selection-end-column="286" />
             <folding />
           </first_editor>
           <second_editor>
