@@ -1,5 +1,5 @@
 {
-  "name": "chameleon",
+  "name": "demo",
   "version": "1.0.0",
   "lockfileVersion": 1,
   "requires": true,
@@ -10,8 +10,8 @@
       "integrity": "sha512-3voN7q29/mApCpH4D58dQds2GjmhI7s1DbBpsdg46yKwMHYwW2B7dr6KyVNecnjOHU1fCRs+lgxyB7n4/voQ4Q==",
       "requires": {
         "chameleon-bridge": "0.1.0",
-        "fetch-detector": "1.0.1",
-        "fetch-ie8": "1.5.0"
+        "fetch-detector": "^1.0.1",
+        "fetch-ie8": "^1.5.0"
       }
     },
     "chameleon-bridge": {

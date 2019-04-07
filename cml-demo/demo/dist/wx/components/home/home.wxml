@@ -1,0 +1,11 @@
+<view class="home  cml-base cml-view">
+  <view class="home-content  cml-base cml-view">
+    <view class="home-content-btn-wrapper  cml-base cml-view">
+      <cml-buildin-button type="blue" size="medium" text="选择城市" bindonclick="_cmlEventProxy" data-eventonclick="selectCity" class=" cml-base cml-button">
+        </cml-buildin-button>
+    </view>
+    <view class="home-content-text-wrapper  cml-base cml-view">
+      <text class=" cml-base cml-text">你选择的城市为：{{city}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="about  cml-base cml-view">
+  <view class="about-content  cml-base cml-view">
+    <text class=" cml-base cml-text">I am Chameleon!</text>
+    <image class="about-logo  cml-base cml-image" src="{{logo}}"></image>
+  </view>
+</view>

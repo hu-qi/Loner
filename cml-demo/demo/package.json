@@ -12,6 +12,10 @@
     "chameleon-runtime": "0.0.3",
     "chameleon-store": "0.0.3",
     "chameleon-ui-builtin": "0.0.6",
-    "cml-ui": "0.0.6"
+    "cml-ui": "0.0.6",
+    "cube-ui": "^1.12.11",
+    "iview": "^3.2.2",
+    "vux": "^2.9.2",
+    "weex-ui": "^0.6.9"
   }
 }
