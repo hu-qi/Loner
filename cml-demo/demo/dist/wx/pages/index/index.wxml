@@ -1,4 +1,0 @@
-<view class="page-wrapper  cml-base cml-view">
-  
-  <c-tabbar data-modelkey="currentComp" bindinput="_cmlModelEventProxy" value="{{currentComp}}" tabbar="{{tabbar}}" class=" cml-base cml-c-tabbar"></c-tabbar>
-</view>
