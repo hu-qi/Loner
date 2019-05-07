@@ -10,7 +10,6 @@
 /dist
 
 # misc
-.idea/
 .happypack
 .DS_Store
 
