@@ -18,7 +18,7 @@ Loner 日常
 * 【2019-05-05】React Native项目结构搭建&d2-Admin学习。接下来的学习和工作重点都围绕React Native展开。另外巩固学习Vue，这里通过学习d2-admin最新的开源项目[d2-admin-renren-security-enterprise](https://github.com/d2-projects/d2-admin-renren-security-enterprise)源码来巩固学习Vue的后台管理实战开发。
 
 ## 三 兴趣探索
-* H5相关案例研究。目前以[TrandoMedia](http://www.trando.com.cn/)公司的案例为主，各大厂的热门案例为辅，j兼顾未来编辑器[ivx 2019](https://www.ivx.cn/)，立志成为**ivx布道者**。
+* H5相关案例研究。目前以[TrandoMedia](http://www.trando.com.cn/)公司的案例为主，各大厂的热门案例为辅，兼顾未来编辑器[ivx 2019](https://www.ivx.cn/)，立志成为**ivx布道者**。
 * [码上公益](https://greencode.aliyun.com),马上行动！希望自己快速成长，能尽快担当公益项目的项目经理。现在也有很多机会，目前的水平怕是会把项目搞黄，有项目拉我入伙哦！
 * 云服务的探索，主要关注阿里云的云应用和云开发，另外就是[阿里云大学](https://edu.aliyun.com)和[腾讯云大学](https://cloud.tencent.com/edu)的学习。
 * [fusion](https://fusion.design/)、[飞冰](https://ice.work/)在前端开发中应用的探索。
