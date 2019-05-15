@@ -525,3 +525,57 @@ submit: debounce(function () {
   window.SITE_CONFIG['dynamicMenuRoutes'] = [];                             // 动态(菜单)路由列表
   window.SITE_CONFIG['dynamicMenuRoutesHasAdded'] = false;                  // 动态(菜单)路由是否已经添加的状态标示（用于判断是否需要重新拉取数据并进行动态添加操作）
 ```
+
+- 前端轻量级web进度条-[NProgress](https://github.com/rstacruz/nprogress/)
+感觉像我这种资深Copy级别的零级工程师，对于一些炫酷的页面效果，除了感叹"牛掰",就是一顿复制粘贴。当我看到d2-admin使用的NProgress是0.2.0版本的时候，我以为是个比较新的第三方库，抱着刨根到底的学习心态，我点开了NProgress的github仓库，看到作者[@rstacruz](https://github.com/rstacruz)的主页，不禁赞叹："牛掰!"。说来也巧，@justjavac 大神翻译的速查表就源自作者的[cheatsheets](https://github.com/rstacruz/cheatsheets)。虽然NProgress诞生于2013年8月,(那时我还在学校把妹，对js的了解还只是不小心按到F12),[@rstacruz](https://github.com/rstacruz)对她的维护长达5年之久，目前有18.8K的star，而[@rstacruz](https://github.com/rstacruz)本尊更是值得我辈瞻仰的大神。来看看NProgress怎么使用：一行代码实现web进度条
+```js
+//...
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+//...
+NProgress.start()
+//...
+NProgress.done()
+```
+NProgress的实现原理也很好理解，源码比较简洁，大概是加载开始调用start，加载完成调用done，至于加载进度、具体加载到哪了，都不关心，中间状态是随机的进度，从源码中看到大概加载到99.4%的位置就停了。
+```js
+  NProgress.inc = function(amount) {
+    var n = NProgress.status;
+
+    if (!n) {
+      return NProgress.start();
+    } else if(n > 1) {
+      return;
+    } else {
+      if (typeof amount !== 'number') {
+        if (n >= 0 && n < 0.2) { amount = 0.1; }
+        else if (n >= 0.2 && n < 0.5) { amount = 0.04; }
+        else if (n >= 0.5 && n < 0.8) { amount = 0.02; }
+        else if (n >= 0.8 && n < 0.99) { amount = 0.005; }
+        else { amount = 0; }
+      }
+
+      n = clamp(n + amount, 0, 0.994);
+      return NProgress.set(n);
+    }
+  };
+  //...
+    /**
+   * Helpers
+   */
+
+  function clamp(n, min, max) {
+    if (n < min) return min;
+    if (n > max) return max;
+    return n;
+  }
+```
+
+感兴趣的同学可以看看源码学习学习！☞[nprogress.js](https://github.com/rstacruz/nprogress/blob/master/nprogress.js)
+
+- 重点知识点
+1. mixins  mixins/view-modules.js
+2. 众多页面的实现
+3. element-ui el-card 与d2-admin d2-container 对比
+4. renren菜单转换为d2-admin菜单
+5. iconfont的使用
