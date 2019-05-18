@@ -5,13 +5,13 @@
  * @Email: me@huqi.me
  * @Date: 2019-05-18 10:57:34
  * @LastEditors: huqi
- * @LastEditTime: 2019-05-18 13:00:18
+ * @LastEditTime: 2019-05-18 13:03:47
  -->
 
 > Created by **[huqi](https://github.com/hu-qi)** at **2019-5-5 13:01:14**  
 > Updated by **[huqi](https://github.com/hu-qi)** at **2019-5-5 13:01:14** 
 
-![row-key-is-reqiured](../../../pubilc-repertory/img/rowKey-is-required-1.png)
+![row-key-is-reqiured](../../../public-repertory/img/rowKey-is-required-1.png)
 ↑开局一张图，故事全靠编↑
 
 ## 从最新学习d2开源项目说起
@@ -37,11 +37,11 @@
 ### 修改element-ui版本
 很气人啊，我只能修改package.json文件中依赖element-ui的版本。
 一般来说，默认安装的依赖，如果package.json中带 **^** 符号的话，会默认安装最近的版本，去掉 **^** 符号，重新安装一下element-ui依赖就可以解决了。至于改用那个版本，按照实际来吧，如果去掉 **^** 符号重新安装能成功就可以了，不行就换个版本吧。
-![row-key-is-reqiured](../../../pubilc-repertory/img/rowKey-is-required-2.png)
+![row-key-is-reqiured](../../../public-repertory/img/rowKey-is-required-2.png)
 ### 修改children字段
 这个就不是很好的处理方式了，毕竟后台返回来的数据，你要他改字段，呵呵呵，当然，你话语权足够的话，又不想改前台代码，就让他替换一下childre字段吧。当然，官方将提供更改[children键值的api](https://github.com/ElemeFE/element/issues/14987#issuecomment-479809829)。
-别问我children字段哪来的，我的是后台传过来的；
-![row-key-is-reqiured](../../../pubilc-repertory/img/rowKey-is-required-3.png)
+别问我children字段哪来的，我的是后台传过来的；   
+![row-key-is-reqiured](../../../public-repertory/img/rowKey-is-required-3.png)
 也别问我为什么会冲突，
 我猜是和之里冲突[☞源码](https://github.com/ElemeFE/element/blob/0e0a5061934bd1b5afed49b4d47baefdb9058959/packages/tree/src/model/node.js):
 ```js
