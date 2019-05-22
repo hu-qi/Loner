@@ -1,0 +1,1254 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>✔ 记一次开源学习--D2Admin 人人企业版 · Loner(孤独者)</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="胡琦 - huqi">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../public-repertory/css/gitbook-configure.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../my-blogs/blogs/node-sass-install-error.md" />
+    
+    
+    <link rel="prev" href="README.md" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"hu-qi","repo":"Loner","type":"star","count":true,"size":"small"},{"user":"hu-qi","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    起始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../SUMMARY.html">
+            
+                <a href="../../../SUMMARY.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../MessageBoard.md">
+            
+                <span>
+            
+                    
+                    留言板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../CSS-library/">
+            
+                <a href="../../../CSS-library/">
+            
+                    
+                    ★ CSS 资料室
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../HTML-library/">
+            
+                <a href="../../../HTML-library/">
+            
+                    
+                    ★ HTML 资料室
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../JavaScript-library/">
+            
+                <a href="../../../JavaScript-library/">
+            
+                    
+                    ★ JavaScript 资料室
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ★ 其他资料室
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ☆ 博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../Copy-Engineer-Logs/">
+            
+                <a href="../Copy-Engineer-Logs/">
+            
+                    
+                    ☆ Copy攻城狮日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1.1" data-path="../Copy-Engineer-Logs/【Copy攻城狮日志】CML之5分钟入门多端统一框架.html">
+            
+                <a href="../Copy-Engineer-Logs/【Copy攻城狮日志】CML之5分钟入门多端统一框架.html">
+            
+                    
+                    ✔ CML之5分钟入门多端统一框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.2" data-path="../Copy-Engineer-Logs/【Copy攻城狮日志】Error if there's nested data rowKey is required.html">
+            
+                <a href="../Copy-Engineer-Logs/【Copy攻城狮日志】Error if there's nested data rowKey is required.html">
+            
+                    
+                    ✔ Error if there's nested data rowKey is required
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.3" data-path="../Copy-Engineer-Logs/【Copy攻城狮日志】Node.js之http下载图片失败.html">
+            
+                <a href="../Copy-Engineer-Logs/【Copy攻城狮日志】Node.js之http下载图片失败.html">
+            
+                    
+                    ✔ Node.js之http下载图片失败
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.4" data-path="../Copy-Engineer-Logs/【Copy攻城狮日志】借助Taro暴改Nideshop实现电商支付宝小程序雏形.html">
+            
+                <a href="../Copy-Engineer-Logs/【Copy攻城狮日志】借助Taro暴改Nideshop实现电商支付宝小程序雏形.html">
+            
+                    
+                    ✔ 借助Taro暴改Nideshop实现电商支付宝小程序雏形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.5" data-path="../Copy-Engineer-Logs/【Copy攻城狮日志】聊聊JavaScript heap out of memory.html">
+            
+                <a href="../Copy-Engineer-Logs/【Copy攻城狮日志】聊聊JavaScript heap out of memory.html">
+            
+                    
+                    ✔ 聊聊JavaScript heap out of mem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.6" data-path="../Copy-Engineer-Logs/【Copy攻城狮日志】踩坑小程序之can't read property 'offsetLeft' of undefined.html">
+            
+                <a href="../Copy-Engineer-Logs/【Copy攻城狮日志】踩坑小程序之can't read property 'offsetLeft' of undefined.html">
+            
+                    
+                    ✔ 踩坑小程序之can't read property 'offsetLeft' of undefined
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.7" data-path="../Copy-Engineer-Logs/【Copy攻城狮日志】踩坑小程序之canvas的显示层级问题.html">
+            
+                <a href="../Copy-Engineer-Logs/【Copy攻城狮日志】踩坑小程序之canvas的显示层级问题.html">
+            
+                    
+                    ✔ 踩坑小程序之canvas的显示层级问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.8" data-path="../Copy-Engineer-Logs/【Copy攻城狮日志】踩坑小程序之使用svg作为图标.html">
+            
+                <a href="../Copy-Engineer-Logs/【Copy攻城狮日志】踩坑小程序之使用svg作为图标.html">
+            
+                    
+                    ✔ 踩坑小程序之使用svg作为图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="README.md">
+            
+                <span>
+            
+                    
+                    ☆ 我的倔金
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1.2.1" data-path="d2-admin-renren-security-enterprise.html">
+            
+                <a href="d2-admin-renren-security-enterprise.html">
+            
+                    
+                    ✔ 记一次开源学习--D2Admin 人人企业版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2.2" data-path="../../my-blogs/blogs/node-sass-install-error.md">
+            
+                <span>
+            
+                    
+                    ✔ node-sass-install-error
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../change-for-myself/">
+            
+                <a href="../../change-for-myself/">
+            
+                    
+                    ☆ 暴走前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../change-for-myself/logs/">
+            
+                <a href="../../change-for-myself/logs/">
+            
+                    
+                    ☆ 日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1.1" data-path="../../change-for-myself/logs/2019-05.html">
+            
+                <a href="../../change-for-myself/logs/2019-05.html">
+            
+                    
+                    ✔ 2019-05
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >✔ 记一次开源学习--D2Admin 人人企业版</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#&#x524D;&#x8A00;"><b></b>&#x524D;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#&#x524D;&#x7F6E;&#x51C6;&#x5907;"><b></b>&#x524D;&#x7F6E;&#x51C6;&#x5907;</a></li><li><span class="title-icon "></span><a href="#&#x91CD;&#x5199;&#x56FD;&#x9645;&#x5316;"><b></b>&#x91CD;&#x5199;&#x56FD;&#x9645;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x591A;&#x8BED;&#x8A00;&#x5207;&#x6362;"><b></b>&#x591A;&#x8BED;&#x8A00;&#x5207;&#x6362;</a></li><li><span class="title-icon "></span><a href="#&#x5BF9;&#x63A5;&#x4EBA;&#x4EBA;&#x9A8C;&#x8BC1;&#x7801;"><b></b>&#x5BF9;&#x63A5;&#x4EBA;&#x4EBA;&#x9A8C;&#x8BC1;&#x7801;</a></li><li><span class="title-icon "></span><a href="#axios&#x53CA;&#x767B;&#x5F55;&#x903B;&#x8F91;"><b></b>axios&#x53CA;&#x767B;&#x5F55;&#x903B;&#x8F91;</a></li><li><span class="title-icon "></span><a href="#&#x524D;&#x7AEF;&#x8F7B;&#x91CF;&#x7EA7;web&#x8FDB;&#x5EA6;&#x6761;-nprogress"><b></b>&#x524D;&#x7AEF;&#x8F7B;&#x91CF;&#x7EA7;web&#x8FDB;&#x5EA6;&#x6761;-NProgress</a></li><li><span class="title-icon "></span><a href="#iframe&#x7684;&#x652F;&#x6301;"><b></b>iframe&#x7684;&#x652F;&#x6301;</a></li><li><span class="title-icon "></span><a href="#&#x540E;&#x8BB0;"><b></b>&#x540E;&#x8BB0;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><!--
+ * @Description: file content
+ * @Author: huqi
+ * @GitHub: https://github.com/hu-qi
+ * @Email: me@huqi.me
+ * @Date: 2019-05-08 18:53:52
+ * @LastEditors: huqi
+ * @LastEditTime: 2019-05-22 13:00:42
+ -->
+<blockquote>
+<p>Created by <strong><a href="https://github.com/hu-qi" target="_blank">huqi</a></strong> at <strong>2019-5-5 13:01:14</strong><br>Updated by <strong><a href="https://github.com/hu-qi" target="_blank">huqi</a></strong> at <strong>2019-5-20 15:57:37</strong> </p>
+</blockquote>
+<h3 id="&#x524D;&#x8A00;"><a name="&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x524D;&#x8A00;</h3>
+<p>&#x4E0A;&#x4E2A;&#x6708;&#x6708;&#x5E95;@<a href="https://juejin.im/user/57a48b632e958a006691b946" target="_blank">D2&#x5F00;&#x6E90;&#x7EC4;</a> &#x5F00;&#x6E90;&#x4E86;&#x4F7F;&#x7528; D2Admin &#x9002;&#x914D; &#x4EBA;&#x4EBA;&#x4F01;&#x4E1A;&#x7248;(&#x4E13;&#x4E1A;&#x7248;) &#x7684;&#x524D;&#x7AEF;&#x5DE5;&#x7A0B;--<a href="https://github.com/d2-projects/d2-admin-renren-security-enterprise" target="_blank">d2-admin-renren-security-enterprise</a>,&#x5177;&#x4F53;&#x8BE6;&#x60C5;&#x89C1;&#x261E;<a href="https://juejin.im/post/5cc69b406fb9a032297b08b6" target="_blank">D2Admin &#x4EBA;&#x4EBA;&#x4F01;&#x4E1A;&#x7248;&#x9002;&#x914D;&#x53D1;&#x5E03;</a>&#x3002;&#x7531;&#x4E8E;&#x6700;&#x8FD1;&#x6709;&#x5F00;&#x53D1;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x52A0;&#x4E0A;&#x5176;&#x4ED6;&#x8BF8;&#x591A;&#x56E0;&#x7D20;&#xFF0C;&#x5982;&#xFF1A;&#x60F3;&#x5B66;&#x4E60;&#x4F18;&#x79C0;&#x7684;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#x3001;&#x521A;&#x597D;&#x53C2;&#x52A0;@<a href="https://juejin.im/user/584613ba128fe10058b3cf68" target="_blank">jsliang</a> &#x7EC4;&#x7EC7;&#x7684;<a href="https://github.com/LiangJunrong/document-library/blob/master/other-library/Monologue/GitHubRunawayRace.md" target="_blank">&#x66B4;&#x8D70;&#x524D;&#x7AEF;</a>&#x3001;&#x4E4B;&#x524D;&#x9879;&#x76EE;&#x4F7F;&#x7528;&#x8FC7;<a href="https://github.com/renrenio/renren-fast-vue" target="_blank">renren-fast-vue</a>&#x7B49;&#x7B49;&#xFF0C;&#x4E8E;&#x662F;&#x4E4E;&#x840C;&#x751F;&#x4E86;&#x6839;&#x636E;commits&#x5B66;&#x4E60;&#x4E86;&#x89E3;<a href="https://github.com/d2-projects/d2-admin" target="_blank">d2-admin</a>&#x5982;&#x4F55;&#x6539;&#x9020;renren-security&#x524D;&#x7AEF;&#x7684;&#x60F3;&#x6CD5;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x7763;&#x4FC3;&#x81EA;&#x5DF1;&#x4EA7;&#x51FA;&#x4E00;&#x7BC7;&#x76F8;&#x5173;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x6765;&#x8BB0;&#x5F55;&#x8FD9;&#x6B21;&#x6709;&#x8DA3;&#x7684;&#x5B66;&#x4E60;&#x4E4B;&#x65C5;&#x3002;</p>
+<h3 id="&#x524D;&#x7F6E;&#x51C6;&#x5907;"><a name="&#x524D;&#x7F6E;&#x51C6;&#x5907;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x7F6E;&#x51C6;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x524D;&#x7F6E;&#x51C6;&#x5907;</h3>
+<p>&#x6240;&#x8C13;&#x201C;&#x5DE5;&#x6B32;&#x5584;&#x5176;&#x4E8B;&#x5FC5;&#x5148;&#x5229;&#x5176;&#x5668;&#x201D;&#xFF0C;&#x8FDE;&#x6211;&#x8FD9;&#x6837;&#x7684;Copy&#x653B;&#x57CE;&#x72EE;&#x90FD;&#x8981;&#x642D;&#x5EFA;&#x7684;&#x524D;&#x7AEF;&#x57FA;&#x7840;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#xFF0C;&#x90FD;9102&#x5E74;&#x5566;&#xFF0C;&#x518D;&#x6CA1;&#x6709;node&#x73AF;&#x5883;&#x90FD;&#x6CA1;&#x6CD5;&#x8FDB;&#x884C;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4E86;&#xFF0C;&#x518D;&#x4E0D;&#x6D4E;&#x8FD0;&#x884C;d2-admin&#x7684;&#x73AF;&#x5883;&#x603B;&#x8BE5;&#x6709;&#x5427;&#xFF01;</p>
+<ul>
+<li>&#x5B89;&#x88C5;&#x73AF;&#x5883;<br>&#x8FD9;&#x91CC;&#x8BF7;&#x53C2;&#x8003;D2 Admin&#x5FEB;&#x901F;&#x4E0A;&#x624B;&#x90E8;&#x5206;&#xFF1A;<a href="https://doc.d2admin.fairyever.com/zh/learn-guide/getting-started.html#&#x5B89;&#x88C5;&#x73AF;&#x5883;" target="_blank">&#x261E;&#x5B89;&#x88C5;&#x73AF;&#x5883;</a></li>
+<li>Fork D2-Admin@1.6.18<br>&#x8FD9;&#x91CC;&#x7D27;&#x8DDF;@<a href="https://github.com/FairyEver" target="_blank">FairyEver</a> &#x5927;&#x5927;&#x7684;&#x601D;&#x8DEF;&#xFF0C;&#x57FA;&#x4E8E;D2-Admin@1.6.18 &#x5F00;&#x53D1;&#x3002;&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<a href="https://github.com/d2-projects/d2-admin-cli" target="_blank">D2 Admin CLI</a>&#x6765;&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;,&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x53C2;&#x7167;&#xFF1A;<a href="https://doc.d2admin.fairyever.com/zh/learn-guide/getting-started.html#%E4%B8%8B%E8%BD%BD%E9%A1%B9%E7%9B%AE" target="_blank">&#x261E;&#x4E0B;&#x8F7D;&#x9879;&#x76EE;</a></li>
+<li><p>&#x4E86;&#x89E3;D2Admin&#x9879;&#x76EE;&#x7ED3;&#x6784;<br>&#x6709;&#x8FC7;&#x5F00;&#x53D1;&#x7ECF;&#x5386;&#x7684;&#x540C;&#x5B66;&#x5728;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x4E4B;&#x524D;&#x4E00;&#x822C;&#x90FD;&#x6709;&#x8FC7;&#x9879;&#x76EE;&#x7ED3;&#x6784;&#x642D;&#x5EFA;&#x7684;&#x7ECF;&#x5386;&#xFF0C;&#x5F53;&#x7136;&#x5982;&#x679C;&#x60A8;&#x4E0D;&#x5E78;&#x548C;&#x6211;&#x4E00;&#x6837;&#x53EA;&#x4F1A;&#x7528;&#x522B;&#x4EBA;&#x642D;&#x5EFA;&#x597D;&#x7684;&#x5DE5;&#x7A0B;&#x811A;&#x624B;&#x67B6;&#xFF0C;&#x90A3;&#x60A8;&#x4E00;&#x5B9A;&#x4F1A;&#x5148;&#x4E86;&#x89E3;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF0C;&#x4E0D;&#x7136;&#x8FD8;&#x771F;&#x4E0D;&#x77E5;&#x9053;&#x6E90;&#x7801;&#x8981;&#x5199;&#x5728;&#x54EA;&#x91CC;&#x3002;</p>
+  <details>
+     <summary>&#x9879;&#x76EE;&#x7ED3;&#x6784;</summary>
+
+  ~~~
+    &#x251C;&#x2500; docs                    // &#x6587;&#x6863;
+    &#x251C;&#x2500; packages                // &#x989D;&#x5916;&#x7684;&#x5305;
+    &#x251C;&#x2500; public                  // &#x516C;&#x5171;&#x6587;&#x4EF6;
+    &#x251C;&#x2500; src                     // &#x6E90;&#x7801;&#x76EE;&#x5F55;
+    &#x2502;  &#x251C;&#x2500; assets                 // &#x8D44;&#x6E90;
+    &#x2502;  &#x2502;  &#x251C;&#x2500; icons
+    &#x2502;  &#x2502;  &#x251C;&#x2500; image
+    &#x2502;  &#x2502;  &#x251C;&#x2500; library
+    &#x2502;  &#x2502;  &#x2514;&#x2500; style
+    &#x2502;  &#x251C;&#x2500; components             // &#x7EC4;&#x4EF6;
+    &#x2502;  &#x2502;  &#x251C;&#x2500; charts
+    &#x2502;  &#x2502;  &#x251C;&#x2500; core
+    &#x2502;  &#x2502;  &#x2514;&#x2500; demo
+    &#x2502;  &#x251C;&#x2500; i18n                   // &#x591A;&#x8BED;&#x8A00;
+    &#x2502;  &#x251C;&#x2500; menu                   // &#x83DC;&#x5355;
+    &#x2502;  &#x251C;&#x2500; mock                   // &#x6A21;&#x62DF;&#x6570;&#x636E;
+    &#x2502;  &#x251C;&#x2500; pages                  // &#x9875;&#x9762;
+    &#x2502;  &#x251C;&#x2500; plugin                 // &#x63D2;&#x4EF6;
+    &#x2502;  &#x251C;&#x2500; router                 // &#x8DEF;&#x7531;
+    &#x2502;  &#x251C;&#x2500; store                  // vuex
+    &#x2502;  &#x251C;&#x2500; utils
+    &#x2502;  &#x251C;&#x2500; App.vue
+    &#x2502;  &#x2514;&#x2500; main.js
+    &#x251C;&#x2500; tests                   // &#x6D4B;&#x8BD5;&#x6587;&#x4EF6;
+    &#x251C;&#x2500; .browserslistrc         // &#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x8BBE;&#x7F6E;
+    &#x251C;&#x2500; .env                    // &#x73AF;&#x5883;&#x53D8;&#x91CF;
+    &#x251C;&#x2500; .env.development        // &#x5F00;&#x53D1;&#x73AF;&#x5883;&#x53D8;&#x91CF;
+    &#x251C;&#x2500; .env.nomock             // nomock&#x73AF;&#x5883;&#x53D8;&#x91CF;
+    &#x251C;&#x2500; .env.travis             // &#x751F;&#x6210;&#x73AF;&#x5883;&#x53D8;&#x91CF;
+    &#x251C;&#x2500; .eslintignore           // ESLint&#x5FFD;&#x7565;
+    &#x251C;&#x2500; .eslintrc.js            // ESLint&#x914D;&#x7F6E;
+    &#x251C;&#x2500; .gitignore              // git&#x5FFD;&#x7565;
+    &#x251C;&#x2500; .postcssrc.js           // postcss&#x914D;&#x7F6E;
+    &#x251C;&#x2500; .travis.yml             // &#x6301;&#x7EED;&#x96C6;&#x6210;&#x670D;&#x52A1;
+    &#x251C;&#x2500; babel.config.js         // babel&#x914D;&#x7F6E;
+    &#x251C;&#x2500; cdnrefresh-dirs.txt     // cdn&#x8BBE;&#x7F6E;
+    &#x251C;&#x2500; jest.config.js          // jest&#x8BBE;&#x7F6E;
+    &#x251C;&#x2500; LICENSE                 // &#x5F00;&#x6E90;&#x534F;&#x8BAE;
+    &#x251C;&#x2500; package-lock.json       // &#x5305;&#x6587;&#x4EF6;&#x9501;&#x7248;&#x672C;
+    &#x251C;&#x2500; package.json            // &#x5305;&#x6587;&#x4EF6;
+    &#x251C;&#x2500; qiniu-config            // &#x4E03;&#x725B;&#x4E91;&#x914D;&#x7F6E;
+    &#x251C;&#x2500; qshell                  // &#x4E03;&#x725B;API&#x670D;&#x52A1;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;
+    &#x251C;&#x2500; README.md
+    |&#x2014; README.zh.md                
+    &#x251C;&#x2500; vue.config.js           // vue&#x914D;&#x7F6E;
+  ~~~
+  </details>
+</li>
+<li><p>&#x5220;&#x9664;&#x65E0;&#x5173;&#x6587;&#x4EF6;<br>&#x5220;&#x9664;.browserslistrc&#x3001;.env.nomock&#x3001;.env.travis &#x3001;.gitignore&#x3001;.postcssrc.js&#x3001;.travis.yml&#x3001;cdnrefresh-dirs.txt &#x3001;package-lock.json&#x3001; qiniu-config &#x3001;qshell&#x3001;README.zh.md&#x3001;README.md&#x3001;doc/image&#x3001;package/*&#x3002;&#x5177;&#x4F53;&#x53EF;&#x67E5;&#x770B;&#xFF1A;<a href="https://github.com/hu-qi/d2-admin-renren-security-study/commit/fa0e2ee4e5f5ee447bac4b33be81a36918958030" target="_blank">&#x261E;&#x5220;&#x9664;&#x6682;&#x65F6;&#x672A;&#x7528;&#x5230;&#x6A21;&#x5757;</a></p>
+</li>
+<li><p>&#x4FEE;&#x6539;package.json<br>&#x79FB;&#x9664;&#x6682;&#x65F6;&#x672A;&#x7528;&#x5230;&#x7684;&#x5305;,&#x5982;&#x591A;&#x8BED;&#x8A00;&#xFF0C;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x5C06;&#x7B80;&#x5316;&#x591A;&#x8BED;&#x8A00;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF0C;&#x5982;&#x56FE;&#x8868;&#x5E93;&#x3001;&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x3001;&#x53F3;&#x952E;&#x83DC;&#x5355;&#x7B49;&#xFF1A;<br>countup.js<br>echarts<br>github-markdown-css<br>highlight.js<br>marked<br>mockjs<br>simplemde<br>v-charts<br>v-contextmenu<br>vue-grid-layout
+vue-i18n<br>vue-json-tree-view<br>vue-splitpane<br>vue-ueditor-wra<br>@kazupon/vue-i18n-loader<br>&#x5220;&#x9664;build:nomock&#x547D;&#x4EE4;&#xFF0C;&#x589E;&#x52A0;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6587;&#x4EF6;.env&#x3001;.env.production&#x3001;.env.production.sit&#x3001;.env.production.uat&#x7B49;&#x3002;&#x81F3;&#x6B64;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>npm install</code> &#x6216; <code>yarn</code>&#x6765;&#x5B89;&#x88C5;&#x9879;&#x76EE;&#x4F9D;&#x8D56;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;<code>npm run dev</code>&#x4E4B;&#x7C7B;&#x7684;&#x6307;&#x4EE4;&#x8FD0;&#x884C;&#x9879;&#x76EE;&#xFF0C;&#x5177;&#x4F53;&#x6307;&#x4EE4;&#x53EF;&#x67E5;&#x770B;  <strong>package.json</strong> &#x6587;&#x4EF6;&#x4E2D; <strong>scripts</strong> &#x90E8;&#x5206;&#x3002;</p>
+</li>
+</ul>
+<h3 id="&#x91CD;&#x5199;&#x56FD;&#x9645;&#x5316;"><a name="&#x91CD;&#x5199;&#x56FD;&#x9645;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x5199;&#x56FD;&#x9645;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CD;&#x5199;&#x56FD;&#x9645;&#x5316;</h3>
+<p>&#x81F3;&#x4E8E;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x91CD;&#x5199;&#xFF0C;&#x8981;&#x95EE;&#x5927;&#x4F6C;&#x4E86;&#x3002;&#x6211;&#x4E5F;&#x53EA;&#x80FD;&#x5984;&#x52A0;&#x63E3;&#x6D4B;&#xFF1A;&#x7B80;&#x5316;&#x7ED3;&#x6784;&#xFF01;&#x4E4B;&#x524D;&#x7684;&#x7ED3;&#x6784;&#x662F;&#x4E00;&#x4E2A;index.js+lang&#x6587;&#x4EF6;&#x5939;&#xFF0C;lang&#x6587;&#x4EF6;&#x5939;&#x91CC;&#x53C8;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x8BED;&#x8A00;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x73B0;&#x5728;&#x7684;&#x7ED3;&#x6784;&#x76F4;&#x63A5;&#x4E86;&#x5F53;--index.js+&#x591A;&#x4E2A;&#x8BED;&#x8A00;js&#x6587;&#x4EF6;&#x3002;&#x5173;&#x4E8E;&#x56FD;&#x9645;&#x5316;&#x6211;&#x4E5F;&#x53EA;&#x662F;&#x5F88;&#x80A4;&#x6D45;&#x7684;&#x4E86;&#x89E3;&#xFF0C;&#x867D;&#x7136;&#x4E4B;&#x524D;&#x63A5;&#x89E6;&#x8FC7;&#x7684;&#x9879;&#x76EE;&#x4E5F;&#x505A;&#x8FC7;&#xFF0C;&#x91CC;&#x8FB9;&#x5751;&#x7684;&#x786E;&#x633A;&#x591A;&#x7684;&#xFF0C;&#x9664;&#x4E86;&#x57FA;&#x672C;&#x7684;&#x7FFB;&#x8BD1;&#x8FD8;&#x8981;&#x7ED3;&#x5408;&#x5F53;&#x5730;&#x7684;&#x6587;&#x5316;&#x4E60;&#x4FD7;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x5C55;&#x5F00;&#x8BA8;&#x8BBA;&#xFF0C;&#x641C;&#x7D22;&#x5173;&#x952E;&#x5B57;<strong>i18n</strong>&#x4FBF;&#x6709;&#x4F17;&#x591A;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x56DE;&#x5230;&#x5927;&#x4F6C;@<a href="https://github.com/FairyEver" target="_blank">FairyEver</a> &#x7684;&#x6E90;&#x7801;&#xFF0C;&#x8DDF;&#x7740;&#x4ED6;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;vue-i18n&#x7684;&#x4F7F;&#x7528;&#xFF1A;</p>
+<ul>
+<li>&#x5B89;&#x88C5;&#x4F9D;&#x8D56;   <pre class="language-"><code class="lang-bash"><span class="token function">npm</span> <span class="token function">install</span> vue-i18n
+</code></pre>
+<ul>
+<li>main.js&#x4E2D;&#x5F15;&#x5165;
+```js
+// ...</li>
+</ul>
+</li>
+</ul>
+<p>// i18n
+import i18n from &apos;@/i18n&apos;</p>
+<p>// ...</p>
+<p>new Vue({
+  i18n,
+  // ...
+)}</p>
+<pre class="language-"><code> - &#x65B0;&#x5EFA;&#x8BED;&#x8A00;&#x5305;&#xFF0C;&#x6784;&#x5EFA;js  
+  &#x6838;&#x5FC3;&#x4EE3;&#x7801;&#xFF1A;   
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>details</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">&gt;</span></span>index.js<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>summary</span><span class="token punctuation">&gt;</span></span>
+
+    ~~~js
+    // &#x5F15;&#x5165;&#x76F8;&#x5173;&#x4F9D;&#x8D56;&#x53CA;&#x8BED;&#x8A00;&#x5305;
+    import Vue from &apos;vue&apos;
+    import VueI18n from &apos;vue-i18n&apos;
+    import Cookies from &apos;js-cookie&apos;
+    // &#x9644;&#x5E26;&#x5F15;&#x5165;element-ui&#x7684;&#x591A;&#x8BED;&#x8A00;&#x5207;&#x6362;
+    import zhCNLocale from &apos;element-ui/lib/locale/lang/zh-CN&apos;
+    import zhTWLocale from &apos;element-ui/lib/locale/lang/zh-TW&apos;
+    import enLocale from &apos;element-ui/lib/locale/lang/en&apos;
+    // &#x5F15;&#x5165;&#x8BED;&#x8A00;&#x5305;
+    import zhCN from &apos;./zh-CN&apos;
+    import zhTW from &apos;./zh-TW&apos;
+    import enUS from &apos;./en-US&apos;
+
+    Vue.use(VueI18n)
+
+    // &#x5B9A;&#x4E49;&#x4F7F;&#x7528;&#x7684;&#x8BED;&#x8A00;
+    export const messages = {
+      &apos;zh-CN&apos;: {
+        &apos;_lang&apos;: &apos;&#x7B80;&#x4F53;&#x4E2D;&#x6587;&apos;,
+        ...zhCN,
+        ...zhCNLocale
+      },
+      &apos;zh-TW&apos;: {
+        &apos;_lang&apos;: &apos;&#x7E41;&#x9AD4;&#x4E2D;&#x6587;&apos;,
+        ...zhTW,
+        ...zhTWLocale
+      },
+      &apos;en-US&apos;: {
+        &apos;_lang&apos;: &apos;English&apos;,
+        ...enUS,
+        ...enLocale
+      }
+    }
+
+    // &#x9ED8;&#x8BA4;&#x4ECE;cookie&#x4E2D;&#x8BFB;&#x53D6;&#x6216;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E2D;&#x6587;
+    export default new VueI18n({
+      locale: Cookies.get(&apos;language&apos;) || &apos;zh-CN&apos;,
+      messages
+    })
+    ~~~
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>details</span><span class="token punctuation">&gt;</span></span>
+
+    &#x8BED;&#x8A00;&#x5305;&#x4EE5;&#x6E7E;&#x6E7E;&#x7E41;&#x4F53;&#x4E3A;&#x4F8B;&#xFF1A;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>details</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">&gt;</span></span>zh-TW.js<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>summary</span><span class="token punctuation">&gt;</span></span>
+
+    ~~~js
+    // &#x5B9A;&#x4E49;&#x8BED;&#x8A00;&#x5BF9;&#x8C61;
+    const t = {}
+
+    t.loading = &apos;&#x52A0;&#x8F09;&#x4E2D;...&apos;
+
+    // &#x6784;&#x5EFA;&#x5BF9;&#x8C61;
+    t.brand = {}
+    t.brand.lg = &apos;&#x4EBA;&#x4EBA;&#x6B0A;&#x9650;&#x4F01;&#x696D;&#x7248;&apos;
+    t.brand.mini = &apos;&#x4EBA;&#x4EBA;&apos;
+
+    // ...
+    export default t
+    ~~~
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>details</span><span class="token punctuation">&gt;</span></span>
+
+- &#x4F7F;&#x7528;   
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>details</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">&gt;</span></span>App.vue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>summary</span><span class="token punctuation">&gt;</span></span>
+
+    ~~~js
+    // &#x9009;&#x62E9;&#x8BED;&#x8A00;
+    import Cookies from &apos;js-cookie&apos;
+    import { messages } from &apos;@/i18n&apos;
+    export default {
+      name: &apos;app&apos;,
+      watch: {
+        &apos;$i18n.locale&apos;: &apos;i18nHandle&apos;
+      },
+      created () {
+        this.i18nHandle(this.$i18n.locale)
+      },
+      methods: {
+        i18nHandle (val, oldVal) {
+          Cookies(&apos;language&apos;, val)
+          document.querySelector(&apos;html&apos;).setAttribute(&apos;lang&apos;, val)
+          document.title = messages[val].brand.lg
+          // &#x975E;&#x767B;&#x5F55;&#x9875;&#x9762;&#xFF0C;&#x5207;&#x6362;&#x8BED;&#x8A00;&#x5237;&#x65B0;&#x9875;&#x9762;
+          if (this.$route.name !== &apos;login&apos; &amp;&amp; oldVal) {
+            window.location.reload()
+          }
+        }
+      }
+    }
+    ~~~
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>details</span><span class="token punctuation">&gt;</span></span>
+
+   &#x9875;&#x9762;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#xFF1A;
+   ```js
+    // template
+    {{ $t(&apos;login.motto.text&apos;) }}
+    :placeholder=&quot;$t(&apos;login.form.placeholderUsername&apos;)&quot;
+    // script
+    this.$t(&apos;login.motto.text&apos;)
+</code></pre><ul>
+<li>&#x68C0;&#x9A8C;&#x6210;&#x679C;<br>&#x5B9E;&#x8DF5;&#x662F;&#x68C0;&#x9A8C;&#x771F;&#x7406;&#x7684;&#x552F;&#x4E00;&#x6807;&#x51C6;&#x3002;
+&#x4FEE;&#x6539;i18n/index.js &#x5C06;locale&#x6539;&#x4E3A;&#x6E7E;&#x6E7E;&#x7E41;&#x4F53;&#xFF0C;&#x5C31;&#x80FD;&#x76F4;&#x89C2;&#x7684;&#x770B;&#x5230;title&#x7684;&#x53D8;&#x5316;&#xFF0C;&#xFF08;&#x522B;&#x95EE;&#x6211;&#x4E3A;&#x5565;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x6587;&#x5B57;&#x600E;&#x4E48;&#x6CA1;&#x53D8;&#x5316;&#xFF1F;&#x56E0;&#x4E3A;&#x5199;&#x6B7B;&#x4E3A;&#x7B80;&#x4F53;&#x4E2D;&#x6587;&#x5566;&#xFF01;&#xFF09;</li>
+</ul>
+<p><img src="https://user-gold-cdn.xitu.io/2019/5/20/16ad4ae6c0a7a949?w=1611&amp;h=836&amp;f=png&amp;s=84455" alt="d2-admin-renren-security-enterprise-i18n">
+&#x6CE8;&#x610F;&#xFF1A;
+&#x5B9E;&#x73B0;vue-i18n+element-ui&#x591A;&#x8BED;&#x8A00;&#x5207;&#x6362;&#x9700;&#x624B;&#x52A8;&#x6CE8;&#x518C;&#x5982;&#xFF0C;&#x53C2;&#x8003;<a href="https://element.eleme.io/#/zh-CN/component/i18n" target="_blank">element-ui&#x56FD;&#x9645;&#x5316;</a>&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// i18n</span>
+<span class="token keyword">import</span> i18n <span class="token keyword">from</span> <span class="token string">&apos;@/i18n&apos;</span>
+<span class="token comment">// Element</span>
+<span class="token keyword">import</span> ElementUI <span class="token keyword">from</span> <span class="token string">&apos;element-ui&apos;</span>
+<span class="token keyword">import</span> <span class="token string">&apos;element-ui/lib/theme-chalk/index.css&apos;</span>
+<span class="token comment">// Element</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>ElementUI<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">i18n</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> i18n<span class="token punctuation">.</span><span class="token function">t</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6587;&#x5B57;&#x90E8;&#x5206;&#x5168;&#x90E8;&#x4FEE;&#x6539;&#x4E3A;&#x56FD;&#x9645;&#x5316;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x660E;&#x663E;&#x7684;&#x6548;&#x679C;&#x5566;&#xFF1A;</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/5/20/16ad4b29e25ec072?w=1609&amp;h=840&amp;f=png&amp;s=81822" alt="d2-admin-renren-security-enterprise-i18n"></p>
+<h3 id="&#x591A;&#x8BED;&#x8A00;&#x5207;&#x6362;"><a name="&#x591A;&#x8BED;&#x8A00;&#x5207;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x8BED;&#x8A00;&#x5207;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x8BED;&#x8A00;&#x5207;&#x6362;</h3>
+<p>&#x65E2;&#x7136;&#x6709;&#x4E86;&#x56FD;&#x9645;&#x5316;&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x90A3;&#x4E48;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x591A;&#x8BED;&#x8A00;&#x5207;&#x6362;&#x7684;&#x5C0F;&#x529F;&#x80FD;&#x5E94;&#x8BE5;&#x662F;&#x6C34;&#x5230;&#x6E20;&#x6210;&#x3002;&#x6765;&#x770B;&#x770B;@<a href="https://github.com/FairyEver" target="_blank">FairyEver</a>&#x662F;&#x600E;&#x4E48;&#x6559;&#x7684;&#xFF01;
+&#x5076;&#x7136;&#x95F4;&#x770B;&#x5230;d2-admin&#x4E2D;&#x7684;&#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;flex&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x611F;&#x5230;&#x5F88;&#x597D;&#x5947;&#x3002;</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/5/20/16ad4b6889aa7ed7?w=1236&amp;h=1001&amp;f=png&amp;s=191095" alt="">
+flex&#xFF0C;&#x5BF9;&#x4E8E;&#x65B0;&#x4E16;&#x7EAA;&#x7684;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x6765;&#x8BF4;&#x6700;&#x719F;&#x6089;&#x4E0D;&#x8FC7;&#xFF0C;&#x4F46;&#x662F;&#x6807;&#x7B7E;&#x4E0A;&#x76F4;&#x63A5;&#x5199;flex&#x5C5E;&#x6027;&#xFF0C;&#x4F5C;&#x4E3A;&#x5F88;&#x6C34;&#x5F88;&#x6C34;&#x7684;&#x8001;&#x83DC;&#x9E1F;&#x5374;&#x662F;&#x5B64;&#x843D;&#x5BE1;&#x95FB;&#xFF0C;&#x4E0D;&#x8FC7;&#x804C;&#x4E1A;&#x75C5;&#x7684;&#x76F4;&#x89C9;&#x544A;&#x8BC9;&#x6211;&#x4E00;&#x5B9A;&#x662F;&#x8DDF;flex&#x5E03;&#x5C40;&#x6709;&#x5173;&#x3002;&#x4E8E;&#x662F;&#x6211;&#x6309;&#x56FE;&#x7D22;&#x9AA5;&#xFF0C;&#x5148;&#x7FFB;&#x9605;&#x4E86;&#x4E00;&#x4E0B;package.json&#xFF0C;&#x91CC;&#x8FB9;&#x679C;&#x7136;&#x627E;&#x5230;&#x4E00;&#x4E2A;<a href="https://github.com/lzxb/flex.css/blob/master/docs/zh-ch.md" target="_blank">flex.css</a>&#x7684;&#x4F9D;&#x8D56;&#x5305;&#x3002;&#x5927;&#x6982;&#x5B9E;&#x73B0;&#x600E;&#x6837;&#x7684;&#x6548;&#x679C;&#x5462;&#xFF1F;&#x6211;&#x7684;&#x8BA4;&#x77E5;&#x662F;&#x901A;&#x8FC7;&#x6807;&#x7B7E;&#x7684;flex&#x5C5E;&#x6027;&#xFF0C;&#x65E0;&#x9700;&#x5199;css&#x5373;&#x53EF;&#x5B9E;&#x73B0;flex&#x5E03;&#x5C40;&#xFF0C;flex.css&#x5185;&#x90E8;&#x901A;&#x8FC7;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;&#x6837;&#x5F0F;&#x6765;&#x5B9E;&#x73B0;flex&#x5E03;&#x5C40;&#xFF0C;&#x66F4;&#x591A;&#x5173;&#x4E8E;flex.css&#x8BF7;&#x6233;<a href="https://github.com/lzxb/flex.css" target="_blank">&#x261E;flex.cc</a>&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x901A;&#x8FC7;elemen-ui&#x7684;<a href="https://element.eleme.io/#/zh-CN/component/dropdown" target="_blank">el-dropdown</a>&#x5B9E;&#x73B0;,&#x901A;&#x8FC7;command&#x4E8B;&#x4EF6;&#x4FEE;&#x6539;&#x8BED;&#x8A00;&#x8BBE;&#x7F6E;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dropdown</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>small<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@command</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>command =&gt; $i18n.locale = command<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>page-login--content-header-side-text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>d2-icon</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>language<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span> {{ $t(&apos;login.language&apos;) }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dropdown-menu</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dropdown<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dropdown-item</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>(language, index) in $languages<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>index<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:command</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>language.value<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ language.label }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-dropdown-item</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-dropdown-menu</span><span class="token punctuation">&gt;</span></span>
+&lt;/el
+</code></pre>
+<h3 id="&#x5BF9;&#x63A5;&#x4EBA;&#x4EBA;&#x9A8C;&#x8BC1;&#x7801;"><a name="&#x5BF9;&#x63A5;&#x4EBA;&#x4EBA;&#x9A8C;&#x8BC1;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x5BF9;&#x63A5;&#x4EBA;&#x4EBA;&#x9A8C;&#x8BC1;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BF9;&#x63A5;&#x4EBA;&#x4EBA;&#x9A8C;&#x8BC1;&#x7801;</h3>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x505A;&#x767B;&#x5F55;&#x9875;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x6216;&#x591A;&#x6216;&#x5C11;&#x4F1A;&#x9047;&#x5230;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x5BF9;&#x4E86;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x9A8C;&#x8BC1;&#x7801;&#x6307;&#x7684;&#x662F;&#x56FE;&#x5F62;&#x9A8C;&#x8BC1;&#x7801;&#x3002;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x8DF5;&#x662F;&#x76F4;&#x63A5;&#x62FF;&#x540E;&#x53F0;&#x7ED9;&#x8FC7;&#x6765;&#x7684;&#x56FE;&#x7247;&#x76F4;&#x63A5;&#x6E32;&#x67D3;&#x7684;&#x5728;&#x9875;&#x9762;&#x4E0A;&#xFF0C;&#x4F7F;&#x7528; <strong>img&#x6807;&#x7B7E;</strong> &#x6216;&#x8005; <strong>background-image</strong> &#x5F15;&#x5165;&#x3002;&#x4E4B;&#x524D;&#x505A;renren-fast-vue&#x4E8C;&#x6B21;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#x7528;&#x7684;img&#x6807;&#x7B7E;&#xFF0C;&#x8FD9;&#x91CC;&#x7528;&#x7684;&#x80CC;&#x666F;&#x56FE;&#x7247;&#xFF0C;&#x601D;&#x8DEF;&#x90FD;&#x4E00;&#x6837;&#xFF1A;&#x62FF;&#x540E;&#x53F0;&#x7ED9;&#x7684;&#x56FE;&#x7247;&#x76F4;&#x63A5;&#x6E32;&#x67D3;&#x3002;&#x4F17;&#x6240;&#x5468;&#x77E5;&#xFF0C;Just do it&#xFF01;</p>
+<p>&#x5B9A;&#x4E49;&#x83B7;&#x53D6;<a href="https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E5%94%AF%E4%B8%80%E8%AF%86%E5%88%AB%E7%A0%81" target="_blank">uuid</a>&#x7684;&#x5DE5;&#x5177;&#x51FD;&#x6570;:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">/**
+ * @description [ renren ] &#x83B7;&#x53D6;uuid
+ */</span>
+util<span class="token punctuation">.</span><span class="token function-variable function">getUUID</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token string">&apos;xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx&apos;</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex">/[xy]/g</span><span class="token punctuation">,</span> <span class="token parameter">c</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>c <span class="token operator">===</span> <span class="token string">&apos;x&apos;</span> <span class="token operator">?</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">16</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token string">&apos;r&amp;0x3&apos;</span> <span class="token operator">|</span> <span class="token string">&apos;0x8&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<details>
+       <summary>&#x4F7F;&#x7528;uuid&#x83B7;&#x53D6;&#x56FE;&#x5F62;&#x9A8C;&#x8BC1;&#x7801;</summary>
+
+~~~html
+<template slot="append">
+  <div class="login-captcha" :style="{ backgroundImage: `url(${captchaPath})` }" @click="updateUUID">
+</div></template>
+~~~
+~~~js
+    // &#x9009;&#x62E9;&#x8BED;&#x8A00;
+    import Cookies from &apos;js-cookie&apos;
+    import { messages } from &apos;@/i18n&apos;
+    export default {
+      name: &apos;app&apos;,
+      watch: {
+        &apos;$i18n.locale&apos;: &apos;i18nHandle&apos;
+      },
+      created () {
+        this.i18nHandle(this.$i18n.locale)
+      },
+      methods: {
+        i18nHandle (val, oldVal) {
+          Cookies(&apos;language&apos;, val)
+          document.querySelector(&apos;html&apos;).setAttribute(&apos;lang&apos;, val)
+          document.title = messages[val].brand.lg
+          // &#x975E;&#x767B;&#x5F55;&#x9875;&#x9762;&#xFF0C;&#x5207;&#x6362;&#x8BED;&#x8A00;&#x5237;&#x65B0;&#x9875;&#x9762;
+          if (this.$route.name !== &apos;login&apos; &amp;&amp; oldVal) {
+            window.location.reload()
+          }
+        }
+      }
+    }
+~~~
+</details>
+
+
+<h3 id="axios&#x53CA;&#x767B;&#x5F55;&#x903B;&#x8F91;"><a name="axios&#x53CA;&#x767B;&#x5F55;&#x903B;&#x8F91;" class="anchor-navigation-ex-anchor" href="#axios&#x53CA;&#x767B;&#x5F55;&#x903B;&#x8F91;"><i class="fa fa-link" aria-hidden="true"></i></a>axios&#x53CA;&#x767B;&#x5F55;&#x903B;&#x8F91;</h3>
+<p><img src="https://user-gold-cdn.xitu.io/2019/5/20/16ad4cc774873260?w=1508&amp;h=828&amp;f=gif&amp;s=1126308" alt="d2-admin-renren-security-enterprise-login">
+&#x81EA;&#x4ECE;&#x6446;&#x8131;&#x4E86;JQuery&#x5927;&#x6CD5;&#xFF0C;&#x963F;&#x8D3E;&#x514B;&#x65AF;&#x548C;&#x6211;&#x4ECE;&#x6B64;&#x662F;&#x964C;&#x751F;&#x4EBA;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x9762;&#x8BD5;&#x5B98;&#x8981;&#x6211;&#x9610;&#x8FF0;&#x963F;&#x8D3E;&#x514B;&#x65AF;&#x539F;&#x7406;&#xFF0C;&#x6211;&#x771F;&#x662F;&#x54D1;&#x5DF4;&#x5403;&#x9EC4;&#x8FDE;&#xFF0C;&#x54E6;&#x4E0D;&#xFF0C;&#x662F;&#x54D1;&#x53E3;&#x65E0;&#x8A00;&#xFF0C;&#x4E00;&#x4E2A;&#x4EE5;CP(Copy&amp;Paste)&#x4E3A;&#x751F;&#x7684;&#x642C;&#x7816;&#x5DE5;&#xFF0C;&#x4F60;&#x4EEC;&#x8FD8;&#x6307;&#x671B;&#x4ED6;&#x4F83;&#x4F83;&#x800C;&#x8C08;&#x4EC0;&#x4E48;&#x539F;&#x7406;&#x4EC0;&#x4E48;&#x5E95;&#x5C42;&#xFF1F;&#x81F3;&#x4E8E;&#x4EC0;&#x4E48;<a href="https://github.com/axios/axios" target="_blank">axios</a>&#x62E6;&#x622A;&#xFF0C;&#x603B;&#x4E4B;&#xFF0C;&#x8FD9;&#x4E00;&#x5757;&#x6D89;&#x53CA;&#x5230;&#x524D;&#x540E;&#x4EA4;&#x4E92;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#x8FD8;&#x662F;&#x86EE;&#x591A;&#x7684;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x4E03;&#x7A8D;&#x901A;&#x7075;&#x516D;&#x7A8D;--&#x4E00;&#x7A8D;&#x4E0D;&#x901A;&#xFF0C;&#x52C9;&#x52C9;&#x5F3A;&#x5F3A;&#x89E3;&#x8BFB;&#x4E00;&#x4E0B;&#x5927;&#x4F6C;&#x7684;&#x5C01;&#x88C5;&#xFF1A;</p>
+  <details>
+       <summary>axios&#x7B80;&#x5355;&#x5C01;&#x88C5;</summary>
+
+    // &#x5F15;&#x7528;&#x76F8;&#x5173;&#x4F9D;&#x8D56;&#x53CA;&#x65B9;&#x6CD5;
+    import axios from &apos;axios&apos;
+    import { Message } from &apos;element-ui&apos;
+    import Cookies from &apos;js-cookie&apos;
+    import { isPlainObject } from &apos;lodash&apos;
+    import qs from &apos;qs&apos;
+    // import util from &apos;@/libs/util&apos;
+    import router from &apos;@/router&apos;
+    import store from &apos;@/store&apos;
+
+    // &#x8BB0;&#x5F55;&#x548C;&#x663E;&#x793A;&#x9519;&#x8BEF;
+    function errorLog (error) {
+      // &#x6DFB;&#x52A0;&#x5230;&#x65E5;&#x5FD7;
+      store.dispatch(&apos;d2admin/log/push&apos;, {
+        message: &apos;&#x6570;&#x636E;&#x8BF7;&#x6C42;&#x5F02;&#x5E38;&apos;,
+        type: &apos;danger&apos;,
+        meta: {
+          error
+        }
+      })
+      // &#x6253;&#x5370;&#x5230;&#x63A7;&#x5236;&#x53F0;
+      if (process.env.NODE_ENV === &apos;development&apos;) {
+        // util.log.danger(&apos;&gt;&gt;&gt;&gt;&gt;&gt; Error &gt;&gt;&gt;&gt;&gt;&gt;&apos;)
+        console.log(error)
+      }
+      // &#x663E;&#x793A;&#x63D0;&#x793A;
+      Message({
+        message: error.message,
+        type: &apos;error&apos;,
+        duration: 5 * 1000
+      })
+    }
+
+    // &#x521B;&#x5EFA;&#x4E00;&#x4E2A; axios &#x5B9E;&#x4F8B;
+    const service = axios.create({
+      baseURL: process.env.VUE_APP_API,
+      timeout: 1000 * 180, // &#x8BF7;&#x6C42;&#x8D85;&#x65F6;&#x65F6;&#x95F4;
+      withCredentials: true // &#x5F53;&#x524D;&#x8BF7;&#x6C42;&#x4E3A;&#x8DE8;&#x57DF;&#x7C7B;&#x578B;&#x65F6;&#x662F;&#x5426;&#x5728;&#x8BF7;&#x6C42;&#x4E2D;&#x534F;&#x5E26;cookie
+    })
+
+    /**
+     * &#x8BF7;&#x6C42;&#x62E6;&#x622A;
+     */
+    service.interceptors.request.use(
+      config =&gt; {
+        // &#x5728;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x4E4B;&#x524D;&#x505A;&#x4E00;&#x4E9B;&#x5904;&#x7406;&#xFF0C;&#x5982;&#x8BBE;&#x7F6E;headers
+        config.headers[&apos;Accept-Language&apos;] = Cookies.get(&apos;language&apos;) || &apos;zh-CN&apos;
+        config.headers[&apos;token&apos;] = Cookies.get(&apos;token&apos;) || &apos;&apos;
+        // &#x9ED8;&#x8BA4;&#x53C2;&#x6570;
+        var defaults = {}
+        // &#x9632;&#x6B62;&#x7F13;&#x5B58;&#xFF0C;GET&#x8BF7;&#x6C42;&#x9ED8;&#x8BA4;&#x5E26;_t&#x53C2;&#x6570;
+        if (config.method === &apos;get&apos;) {
+          config.params = {
+            ...config.params,
+            ...{ &apos;_t&apos;: new Date().getTime() }
+          }
+        }
+        if (isPlainObject(config.data)) {
+          // &#x7EAF;&#x7CB9;&#x5BF9;&#x8C61;&#x89E3;&#x6784;&#x8D4B;&#x503C;
+          config.data = {
+            ...defaults,
+            ...config.data
+          }
+          if (/^application\/x-www-form-urlencoded/.test(config.headers[&apos;content-type&apos;])) {
+            // &#x5E8F;&#x5217;&#x5316;&#x8BF7;&#x6C42;&#x6570;&#x636E;
+            config.data = qs.stringify(config.data)
+          }
+        }
+        return config
+      },
+      error =&gt; {
+        // &#x53D1;&#x9001;&#x5931;&#x8D25;
+        console.log(error)
+        return Promise.reject(error)
+      }
+    )
+
+    /**
+     * &#x54CD;&#x5E94;&#x62E6;&#x622A;
+     */
+    service.interceptors.response.use(
+      response =&gt; {
+         // &#x5904;&#x7406;&#x54CD;&#x5E94;
+        if (response.data.code === 401 || response.data.code === 10001) {
+          // clearLoginInfo()
+          // alert(&apos;TODO clearLoginInfo&apos;)
+          // TODO: &#x6E05;&#x9664;&#x7528;&#x6237;&#x4FE1;&#x606F;
+          router.replace({ name: &apos;login&apos; })
+          return Promise.reject(response.data.msg)
+        }
+        if (response.data.code !== 0) {
+          errorLog(new Error(response.data.msg))
+          return Promise.reject(response.data.msg)
+        }
+        return response.data.data
+      },
+      error =&gt; {
+        errorLog(error)
+        return Promise.reject(error)
+      }
+    )
+
+    export default service
+</details>
+&#x767B;&#x5F55;&#x7684;&#x8BDD;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528;api&#xFF0C;&#x6309;&#x7167;d2-admin&#x7684;&#x9879;&#x76EE;&#x7ED3;&#x6784;&#xFF0C;&#x5728;src/api&#x4E0B;&#x5B9A;&#x4E49;api&#x63A5;&#x53E3;&#xFF0C;&#x5982;sys.login.js:
+
+```js
+    import request from &apos;@/plugin/axios&apos;
+
+    export function login (data) {
+      return request({
+        url: &apos;/login&apos;,
+        method: &apos;post&apos;,
+        data
+      })
+    }
+```
+&#x8C03;&#x7528;api&#x8FDB;&#x884C;&#x767B;&#x5F55;&#xFF1A;
+```js
+// ...
+import { login } from &apos;@api/sys.login&apos;
+// ...
+submit () {
+  this.$refs.loginForm.validate((valid) =&gt; {
+    if (!valid) return
+    login(this.form)
+      .then(async res =&gt; {
+        await this.login(res)
+        this.$router.replace(this.$route.query.redirect || &apos;/&apos;)
+      })
+      .catch(this.updateUUID)
+  })
+}
+// ...
+```
+&#x5F53;&#x7136;&#x8FD8;&#x9700;&#x8981;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x6BD4;&#x5982;&#x767B;&#x5F55;&#x72B6;&#x6001;&#x6301;&#x4E45;&#x5316;&#x3001;&#x8BBE;&#x7F6E;vuex&#x7528;&#x6237;&#x4FE1;&#x606F;&#x7B49;&#x7B49;&#xFF0C;&#x8FD9;&#x91CC;&#x6682;&#x65F6;&#x53EA;&#x505A;&#x7B80;&#x5355;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x53E6;&#x5916;&#x5B89;&#x5229;&#x4E00;&#x4E2A;vscode&#x63D2;&#x4EF6;(&#x4E73;&#x6C9F;&#x60A8;&#x6070;&#x5DE7;&#x7528;&#x7684;&#x5B87;&#x5B99;&#x7B2C;&#x4E00;&#x795E;&#x5668;)--[TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight),&#x7528;&#x6765;&#x7A81;&#x51FA;&#x663E;&#x793A;&#x4EE3;&#x7801;&#x4E2D;&#x7684;todo&#x3001;fixme&#x548C;&#x5176;&#x4ED6;&#x6CE8;&#x91CA;&#xFF0C;&#x542C;&#x8BF4;&#x8001;&#x53F8;&#x673A;&#x90FD;&#x5728;&#x7528;&#x3002;&#x6709;&#x65F6;&#xFF0C;&#x5728;&#x5C06;&#x4EE3;&#x7801;&#x53D1;&#x5E03;&#x5230;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E4B;&#x524D;&#xFF0C;&#x5728;&#x7F16;&#x7801;&#x65F6;&#x5FD8;&#x8BB0;&#x67E5;&#x770B;&#x6DFB;&#x52A0;&#x7684;TODO&#x3002;&#x6240;&#x4EE5;&#x5C31;&#x6709;&#x4E86;&#x8FD9;&#x4E2A;&#x62D3;&#x5C55;&#xFF0C;&#x63D0;&#x9192;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E9B;&#x7B14;&#x8BB0;&#x6216;&#x8005;&#x4E8B;&#x60C5;&#x8FD8;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x3002;mark&#x4E00;&#x4E0B;&#xFF01;
+
+![d2-admin-renren-security-enterprise-TODO](https://user-gold-cdn.xitu.io/2019/5/20/16ad4cd3c75af38a?w=752&amp;h=556&amp;f=png&amp;s=45729)
+
+### &#x6807;&#x51C6;&#x5316;cookie&#x4F7F;&#x7528;
+&#x4F5C;&#x4E3A;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x514D;&#x4E0D;&#x4E86;&#x6D89;&#x53CA;&#x5230;cookie&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x6309;&#x7167;&#x5927;&#x4F6C;&#x7684;&#x601D;&#x8DEF;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x5DE5;&#x5177;&#x96C6;&#x51FD;&#x6570;&#x5E76;&#x57FA;&#x4E8E;[js-cookie](https://github.com/js-cookie/js-cookie)&#x4E8C;&#x6B21;&#x5C01;&#x88C5;&#x4E86;cookie&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;cookie&#x7528;&#x5F97;&#x6700;&#x591A;&#x7684;&#x5C31;&#x662F;get&#x548C;set&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;
+<details>
+       <summary>cookie&#x7B80;&#x5355;&#x5C01;&#x88C5;</summary>
+
+~~~js
+import Cookie from &apos;js-cookie&apos;
+
+/**
+ * @description &#x5B58;&#x50A8; cookie &#x503C;
+ * @param {String} name cookie name
+ * @param {String} value cookie value
+ * @param {Object} setting cookie setting
+ */
+export const cookieSet = function (name = &apos;default&apos;, value = &apos;&apos;, cookieSetting = {}) {
+  let currentCookieSetting = {
+    expires: 1
+  }
+  Object.assign(currentCookieSetting, cookieSetting)
+  Cookie.set(`d2admin-${process.env.VUE_APP_VERSION}-${name}`, value, currentCookieSetting)
+}
+
+/**
+ * @description &#x62FF;&#x5230; cookie &#x503C;
+ * @param {String} name cookie name
+ */
+export const cookieGet = function (name = &apos;default&apos;) {
+  return Cookie.get(`d2admin-${process.env.VUE_APP_VERSION}-${name}`)
+}
+
+/**
+ * @description &#x62FF;&#x5230; cookie &#x5168;&#x90E8;&#x7684;&#x503C;
+ */
+export const cookieGetAll = function () {
+  return Cookie.get()
+}
+
+/**
+ * @description &#x5220;&#x9664; cookie
+ * @param {String} name cookie name
+ */
+export const cookieRemove = function (name = &apos;default&apos;) {
+  return Cookie.remove(`d2admin-${process.env.VUE_APP_VERSION}-${name}`)
+}
+~~~
+</details>
+&#x5982;&#x56FE;&#xFF0C;&#x80FD;&#x770B;&#x5230;&#x76EE;&#x524D;&#x901A;&#x8FC7;&#x6B64;&#x6B21;&#x6807;&#x51C6;&#x5316;&#x5C01;&#x88C5;&#x4E4B;&#x540E;&#x5B58;&#x7684;cookie&#x7684;name&#x90FD;&#x52A0;&#x4E86;**d2admin-**&#x7684;&#x524D;&#x7F00;&#x3002;
+
+![d2-admin-renren-security-enterprise-cookie](https://user-gold-cdn.xitu.io/2019/5/20/16ad4d2de1512354?w=1754&amp;h=716&amp;f=png&amp;s=71105)
+
+### &#x9632;&#x6B62;&#x8FC7;&#x5EA6;&#x70B9;&#x51FB;
+&#x8282;&#x6D41;&#x8FD9;&#x4E2A;&#x77E5;&#x8BC6;&#x70B9;&#x6211;&#x4E5F;&#x662F;&#x4E00;&#x76F4;&#x61F5;&#x61F5;&#x61C2;&#x61C2;&#xFF0C;&#x7ECF;&#x5E38;&#x548C;&#x9632;&#x6296;&#x6DF7;&#x6DC6;&#xFF0C;&#x7406;&#x89E3;&#x4E0D;&#x6DF1;&#x523B;&#xFF0C;&#x8FD8;&#x53EA;&#x662F;&#x505C;&#x7559;&#x5728;&#x5B57;&#x9762;&#x610F;&#x601D;&#x7406;&#x89E3;&#x4E0A;&#xFF1A;&#x51FD;&#x6570;&#x8282;&#x6D41;&#x662F;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x5185;&#x53EA;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x51FD;&#x6570;&#x9632;&#x6296;&#x662F;&#x9891;&#x7E41;&#x89E6;&#x53D1;&#x53EA;&#x6709;&#x95F4;&#x9694;&#x8D85;&#x8FC7;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x624D;&#x6267;&#x884C;&#x3002;&#x8BF7;&#x53C2;&#x8003;[debouncing-throttling-explained-examples](https://css-tricks.com/debouncing-throttling-explained-examples/)
+&#x8FD9;&#x91CC;&#x7B80;&#x5355;&#x7C97;&#x66B4;&#x7684;&#x7528;&#x4E86;[lodash](https://github.com/lodash/lodash)--&#x4E00;&#x4E2A;&#x4E00;&#x81F4;&#x6027;&#x3001;&#x6A21;&#x5757;&#x5316;&#x3001;&#x9AD8;&#x6027;&#x80FD;&#x7684; JavaScript &#x5B9E;&#x7528;&#x5DE5;&#x5177;&#x5E93;&#x3002;&#x3002;
+lodash&#x4E2D;&#x5305;&#x542B;&#x4E00;&#x7CFB;&#x5217;&#x6570;&#x7EC4;&#x3001;&#x6570;&#x5B57;&#x3001;&#x5BF9;&#x8C61;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x7B49;&#x64CD;&#x4F5C;&#x7684;API&#xFF0C;&#x5F53;&#x7136;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x5DE5;&#x5177;&#x51FD;&#x6570;&#x5982;&#x8282;&#x6D41;(throttle)&#x3001;&#x9632;&#x6296;(debounce)&#x3002;
+```js
+// ...
+import { debounce } from &apos;lodash&apos;
+// ...
+submit: debounce(function () {
+  // ...
+}, 1000, { &apos;leading&apos;: true, &apos;trailing&apos;: false })  
+// _.debounce(func, [wait=0], [options={}])  
+// options.leading &#x4E0E;|&#x6216; options.trailing &#x51B3;&#x5B9A;&#x5EF6;&#x8FDF;&#x524D;&#x540E;&#x662F;&#x5148;&#x8C03;&#x7528;&#x540E;&#x7B49;&#x5F85;,&#x8FD8;&#x662F;&#x5148;&#x7B49;&#x5F85;&#x540E;&#x8C03;&#x7528;
+// ...
+```
+&#x524D;&#x540E;&#x5BF9;&#x6BD4;:   
+&#x672A;&#x5904;&#x7406;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x89E6;&#x53D1;&#x7684;&#x8BF7;&#x6C42;&#x4EE4;&#x4EBA;&#x53D1;&#x6307;&#xFF01;
+![d2-admin-renren-security-enterprise-debounce](https://user-gold-cdn.xitu.io/2019/5/20/16ad4d4ebd835cad?w=1503&amp;h=798&amp;f=gif&amp;s=3302964)
+
+&#x5904;&#x7406;&#x4E4B;&#x540E;&#xFF0C;&#x63A7;&#x5236;&#x53F0;&#x8BA9;&#x4EBA;&#x611F;&#x89C9;&#x5F88;&#x6E05;&#x723D;
+![](https://user-gold-cdn.xitu.io/2019/5/20/16ad4d690eec71f4?w=1503&amp;h=798&amp;f=gif&amp;s=3456950)
+
+### &#x5173;&#x4E8E;&#x5168;&#x5C40;&#x914D;&#x7F6E;
+&#x9879;&#x76EE;&#x505A;&#x5F97;&#x592A;&#x5C11;&#x4E86;&#xFF0C;&#x5C24;&#x5176;&#x8FD8;&#x4E0D;&#x4F1A;java&#xFF0C;&#x5BF9;&#x7F51;&#x7AD9;&#x7684;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x8FD9;&#x4E00;&#x5757;&#x7684;&#x7406;&#x89E3;&#x8FD8;&#x505C;&#x7559;&#x5728;&#x521D;&#x7EA7;&#x8BA4;&#x77E5;&#x9636;&#x6BB5;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x5728;&#x7F51;&#x9875;&#x5F00;&#x53D1;&#x4E2D;&#x5F80;&#x5F80;&#x4E00;&#x4E9B;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3001;CDN&#x9759;&#x6001;&#x8D44;&#x6E90;&#x3001;api&#x63A5;&#x53E3;&#x5730;&#x5740;&#x3001;&#x5E38;&#x7528;&#x7684;&#x516C;&#x5171;&#x53D8;&#x91CF;&#x7B49;&#x90FD;&#x4F1A;&#x5199;&#x5230;window&#x4E0B;&#x9762;&#x5E76;&#x63D0;&#x5347;&#x81F3;&#x9996;&#x9875;&#x65B9;&#x4FBF;&#x7BA1;&#x7406;&#xFF0C;&#x5982;&#x7F51;&#x6613;&#x4E00;&#x4E9B;&#x7206;&#x6B3E;&#x7684;H5&#x4E2D;&#x8FD9;&#x79CD;&#x624B;&#x6CD5;&#x975E;&#x5E38;&#x5E38;&#x89C1;&#x3002;&#x5728;&#x6211;&#x4E4B;&#x524D;&#x4F7F;&#x7528;&#x5F00;&#x6E90;&#x7684;renren-fast-vue&#x4E2D;&#x8FD9;&#x79CD;&#x624B;&#x6CD5;&#x66F4;&#x662F;&#x5927;&#x91CF;&#x8FD0;&#x7528;&#xFF0C;&#x8FD9;&#x6B21;&#x5B66;&#x4E60;d2-admin&#x4E5F;&#x501F;&#x9274;&#x4E00;&#x4E0B;&#x8FD9;&#x79CD;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x4F7F;&#x7528;(&#x6302;&#x8F7D;&#x53D8;&#x91CF;&#x4E00;&#x65F6;&#x723D;&#xFF0C;&#x4E00;&#x76F4;&#x6302;&#x8F7D;&#x4E00;&#x76F4;&#x723D;,&#x5C0F;&#x5FC3;&#x522B;&#x7FFB;&#x8F66;&#x4E86;)&#x3002;&#x5148;&#x4E0D;&#x7BA1;&#x4E86;&#xFF0C;&#x4E00;&#x987F;Copy&#x64CD;&#x4F5C;&#x731B;&#x5982;&#x864E;&#xFF0C;&#x5B9A;&#x775B;&#x4E00;&#x770B;&#xFF0C;&#x6CE8;&#x91CA;&#x5360;&#x4E86;&#x767E;&#x5206;&#x4E4B;&#x4E5D;&#x5341;&#x4E94;&#xFF01;&#x5F53;&#x7136;&#xFF0C;&#x4EE3;&#x7801;&#x4E86;&#x77AC;&#x95F4;&#x6709;&#x4E86;&#x540E;&#x7AEF;&#x7684;&#x75D5;&#x8FF9;&#xFF0C;&#x4E0D;&#x8FC7;&#x5728;&#x672C;&#x9879;&#x76EE; public/index.html&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x677F;&#x8BED;&#x6CD5;&#x6765;&#x6E90;&#x4E8E;[ lodash &#x6A21;&#x677F;&#x63D2;&#x5165;](https://lodash.com/docs/4.17.11#template),&#x548C;public&#x6587;&#x4EF6;&#x5939;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x53BB;&#x7FFB;&#x7FFB;d2-admin&#x6587;&#x6863;&#x5173;&#x4E8E;[cli &#x548C; webpack &#x914D;&#x7F6E;](https://doc.d2admin.fairyever.com/zh/sys-cli3-webpack/)&#x90E8;&#x5206;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#xFF0C;&#x603B;&#x4E4B;&#xFF0C;&#x4E07;&#x4E08;&#x9AD8;&#x697C;&#x5E73;&#x5730;&#x8D77;&#xFF0C;&#x57FA;&#x7840;&#x5EFA;&#x8BBE;&#x5F88;&#x91CD;&#x8981;&#xFF01;
+<details>
+       <summary>&#x5168;&#x5C40;&#x914D;&#x7F6E;window.SITE_CONFIG</summary>
+
+~~~js
+  window.SITE_CONFIG = {};
+  window.SITE_CONFIG[&apos;version&apos;] = &apos;<%= process.env.vue_app_version="" %="">&apos;;     // &#x7248;&#x672C;
+  window.SITE_CONFIG[&apos;nodeEnv&apos;] = &apos;<%= process.env.vue_app_node_env="" %="">&apos;;    // node env
+  window.SITE_CONFIG[&apos;apiURL&apos;] = &apos;<%= process.env.vue_app_api="" %="">&apos;;          // api&#x8BF7;&#x6C42;&#x5730;&#x5740;
+  window.SITE_CONFIG[&apos;storeState&apos;] = {};                                    // vuex&#x672C;&#x5730;&#x50A8;&#x5B58;&#x521D;&#x59CB;&#x5316;&#x72B6;&#x6001;&#xFF08;&#x7528;&#x4E8E;&#x4E0D;&#x5237;&#x65B0;&#x9875;&#x9762;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E5F;&#x80FD;&#x91CD;&#x7F6E;&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;&#x4E2D;&#x6240;&#x6709;&#x72B6;&#x6001;&#xFF09;
+  window.SITE_CONFIG[&apos;contentTabDefault&apos;] = {                               // &#x5185;&#x5BB9;&#x6807;&#x7B7E;&#x9875;&#x9ED8;&#x8BA4;&#x5C5E;&#x6027;&#x5BF9;&#x8C61;
+    &apos;name&apos;: &apos;&apos;,                                                             // &#x540D;&#x79F0;, &#x7531; this.$route.name &#x81EA;&#x52A8;&#x8D4B;&#x503C;&#xFF08;&#x9ED8;&#x8BA4;&#xFF0C;&#x540D;&#x79F0; === &#x8DEF;&#x7531;&#x540D;&#x79F0; === &#x8DEF;&#x7531;&#x8DEF;&#x5F84;&#xFF09;
+    &apos;params&apos;: {},                                                           // &#x53C2;&#x6570;, &#x7531; this.$route.params &#x81EA;&#x52A8;&#x8D4B;&#x503C; 
+    &apos;query&apos;: {},                                                            // &#x67E5;&#x8BE2;&#x53C2;&#x6570;, &#x7531; this.$route.query &#x81EA;&#x52A8;&#x8D4B;&#x503C; 
+    &apos;menuId&apos;: &apos;&apos;,                                                           // &#x83DC;&#x5355;id&#xFF08;&#x7528;&#x4E8E;&#x9009;&#x4E2D;&#x4FA7;&#x8FB9;&#x680F;&#x83DC;&#x5355;&#xFF0C;&#x4E0E;this.$store.state.sidebarMenuActiveName&#x8FDB;&#x884C;&#x5339;&#x914D;&#xFF09;
+    &apos;title&apos;: &apos;&apos;,                                                            // &#x6807;&#x9898;
+    &apos;isTab&apos;: true,                                                          // &#x662F;&#x5426;&#x901A;&#x8FC7;tab&#x5C55;&#x793A;&#x5185;&#x5BB9;?
+    &apos;iframeURL&apos;: &apos;&apos;                                                         // &#x662F;&#x5426;&#x901A;&#x8FC7;iframe&#x5D4C;&#x5957;&#x5C55;&#x793A;&#x5185;&#x5BB9;? (&#x4EE5;http[s]://&#x5F00;&#x5934;, &#x81EA;&#x52A8;&#x5339;&#x914D;)
+  };
+  window.SITE_CONFIG[&apos;menuList&apos;] = [];                                      // &#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x5217;&#x8868;&#xFF08;&#x540E;&#x53F0;&#x8FD4;&#x56DE;&#xFF0C;&#x672A;&#x505A;&#x5904;&#x7406;&#xFF09;
+  window.SITE_CONFIG[&apos;permissions&apos;] = [];                                   // &#x9875;&#x9762;&#x6309;&#x94AE;&#x64CD;&#x4F5C;&#x6743;&#x9650;&#xFF08;&#x540E;&#x53F0;&#x8FD4;&#x56DE;&#xFF0C;&#x672A;&#x505A;&#x5904;&#x7406;&#xFF09;
+  window.SITE_CONFIG[&apos;dynamicRoutes&apos;] = [];                                 // &#x52A8;&#x6001;&#x8DEF;&#x7531;&#x5217;&#x8868;
+  window.SITE_CONFIG[&apos;dynamicMenuRoutes&apos;] = [];                             // &#x52A8;&#x6001;(&#x83DC;&#x5355;)&#x8DEF;&#x7531;&#x5217;&#x8868;
+  window.SITE_CONFIG[&apos;dynamicMenuRoutesHasAdded&apos;] = false;                  // &#x52A8;&#x6001;(&#x83DC;&#x5355;)&#x8DEF;&#x7531;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684;&#x72B6;&#x6001;&#x6807;&#x793A;&#xFF08;&#x7528;&#x4E8E;&#x5224;&#x65AD;&#x662F;&#x5426;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x62C9;&#x53D6;&#x6570;&#x636E;&#x5E76;&#x8FDB;&#x884C;&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x64CD;&#x4F5C;&#xFF09;
+~~~
+</%=></%=></%=></details>
+
+<p>&#x5927;&#x5382;&#x67D0;H5&#x6848;&#x4F8B;&#x4E2D;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x6302;&#x8F7D;
+<img src="https://user-gold-cdn.xitu.io/2019/5/20/16ad4da00fd8f2f4?w=1020&amp;h=619&amp;f=png&amp;s=201188" alt="d2-admin-renren-security-enterprise-windowConfig"></p>
+<h3 id="&#x524D;&#x7AEF;&#x8F7B;&#x91CF;&#x7EA7;web&#x8FDB;&#x5EA6;&#x6761;-nprogress"><a name="&#x524D;&#x7AEF;&#x8F7B;&#x91CF;&#x7EA7;web&#x8FDB;&#x5EA6;&#x6761;-nprogress" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x7AEF;&#x8F7B;&#x91CF;&#x7EA7;web&#x8FDB;&#x5EA6;&#x6761;-nprogress"><i class="fa fa-link" aria-hidden="true"></i></a>&#x524D;&#x7AEF;&#x8F7B;&#x91CF;&#x7EA7;web&#x8FDB;&#x5EA6;&#x6761;-<a href="https://github.com/rstacruz/nprogress/" target="_blank">NProgress</a></h3>
+<p>&#x611F;&#x89C9;&#x50CF;&#x6211;&#x8FD9;&#x79CD;&#x8D44;&#x6DF1;Copy&#x7EA7;&#x522B;&#x7684;&#x96F6;&#x7EA7;&#x5DE5;&#x7A0B;&#x5E08;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x70AB;&#x9177;&#x7684;&#x9875;&#x9762;&#x6548;&#x679C;&#xFF0C;&#x9664;&#x4E86;&#x611F;&#x53F9;&quot;&#x725B;&#x63B0;&quot;,&#x5C31;&#x662F;&#x4E00;&#x987F;&#x590D;&#x5236;&#x7C98;&#x8D34;&#x3002;&#x5F53;&#x6211;&#x770B;&#x5230;d2-admin&#x4F7F;&#x7528;&#x7684;NProgress&#x662F;0.2.0&#x7248;&#x672C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EE5;&#x4E3A;&#x662F;&#x4E2A;&#x6BD4;&#x8F83;&#x65B0;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#xFF0C;&#x62B1;&#x7740;&#x5228;&#x6839;&#x5230;&#x5E95;&#x7684;&#x5B66;&#x4E60;&#x5FC3;&#x6001;&#xFF0C;&#x6211;&#x70B9;&#x5F00;&#x4E86;NProgress&#x7684;github&#x4ED3;&#x5E93;&#xFF0C;&#x770B;&#x5230;&#x4F5C;&#x8005;<a href="https://github.com/rstacruz" target="_blank">@rstacruz</a>&#x7684;&#x4E3B;&#x9875;&#xFF0C;&#x4E0D;&#x7981;&#x8D5E;&#x53F9;&#xFF1A;&quot;&#x725B;&#x63B0;!&quot;&#x3002;&#x8BF4;&#x6765;&#x4E5F;&#x5DE7;&#xFF0C;@justjavac &#x5927;&#x795E;&#x7FFB;&#x8BD1;&#x7684;&#x901F;&#x67E5;&#x8868;&#x5C31;&#x6E90;&#x81EA;&#x4F5C;&#x8005;&#x7684;<a href="https://github.com/rstacruz/cheatsheets" target="_blank">cheatsheets</a>&#x3002;&#x867D;&#x7136;NProgress&#x8BDE;&#x751F;&#x4E8E;2013&#x5E74;8&#x6708;,(&#x90A3;&#x65F6;&#x6211;&#x8FD8;&#x5728;&#x5B66;&#x6821;&#x628A;&#x59B9;&#xFF0C;&#x5BF9;js&#x7684;&#x4E86;&#x89E3;&#x8FD8;&#x53EA;&#x662F;&#x4E0D;&#x5C0F;&#x5FC3;&#x6309;&#x5230;F12),<a href="https://github.com/rstacruz" target="_blank">@rstacruz</a>&#x5BF9;&#x5979;&#x7684;&#x7EF4;&#x62A4;&#x957F;&#x8FBE;5&#x5E74;&#x4E4B;&#x4E45;&#xFF0C;&#x76EE;&#x524D;&#x6709;18.8K&#x7684;star&#xFF0C;&#x800C;<a href="https://github.com/rstacruz" target="_blank">@rstacruz</a>&#x672C;&#x5C0A;&#x66F4;&#x662F;&#x503C;&#x5F97;&#x6211;&#x8F88;&#x77BB;&#x4EF0;&#x7684;&#x5927;&#x795E;&#x3002;<br><img src="https://user-gold-cdn.xitu.io/2019/5/20/16ad4dbf9eaf79fe?w=1265&amp;h=843&amp;f=png&amp;s=197309" alt="d2-admin-renren-security-enterprise-rstacruz">
+&#x6765;&#x770B;&#x770B;NProgress&#x600E;&#x4E48;&#x4F7F;&#x7528;&#xFF1A;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;web&#x8FDB;&#x5EA6;&#x6761;&#x3002;   </p>
+<pre class="language-"><code class="lang-js"><span class="token comment">//...</span>
+<span class="token keyword">import</span> NProgress <span class="token keyword">from</span> <span class="token string">&apos;nprogress&apos;</span>
+<span class="token keyword">import</span> <span class="token string">&apos;nprogress/nprogress.css&apos;</span>
+<span class="token comment">//...</span>
+NProgress<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">//...</span>
+NProgress<span class="token punctuation">.</span><span class="token function">done</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>NProgress&#x7684;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x4E5F;&#x5F88;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x6E90;&#x7801;&#x6BD4;&#x8F83;&#x7B80;&#x6D01;&#xFF0C;&#x5927;&#x6982;&#x662F;&#x52A0;&#x8F7D;&#x5F00;&#x59CB;&#x8C03;&#x7528;start&#xFF0C;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x8C03;&#x7528;done&#xFF0C;&#x81F3;&#x4E8E;&#x52A0;&#x8F7D;&#x8FDB;&#x5EA6;&#x3001;&#x5177;&#x4F53;&#x52A0;&#x8F7D;&#x5230;&#x54EA;&#x4E86;&#xFF0C;&#x90FD;&#x4E0D;&#x5173;&#x5FC3;&#xFF0C;&#x4E2D;&#x95F4;&#x72B6;&#x6001;&#x662F;&#x968F;&#x673A;&#x7684;&#x8FDB;&#x5EA6;&#xFF0C;&#x4ECE;&#x6E90;&#x7801;&#x4E2D;&#x770B;&#x5230;&#x5927;&#x6982;&#x52A0;&#x8F7D;&#x5230;99.4%&#x7684;&#x4F4D;&#x7F6E;&#x5C31;&#x505C;&#x4E86;&#x3002;</p>
+<details>
+       <summary>NProgress&#x6838;&#x5FC3;&#x6E90;&#x7801;</summary>
+
+~~~js
+  NProgress.inc = function(amount) {
+    var n = NProgress.status;
+
+    if (!n) {
+      return NProgress.start();
+    } else if(n &gt; 1) {
+      return;
+    } else {
+      if (typeof amount !== &apos;number&apos;) {
+        if (n &gt;= 0 &amp;&amp; n &lt; 0.2) { amount = 0.1; }
+        else if (n &gt;= 0.2 &amp;&amp; n &lt; 0.5) { amount = 0.04; }
+        else if (n &gt;= 0.5 &amp;&amp; n &lt; 0.8) { amount = 0.02; }
+        else if (n &gt;= 0.8 &amp;&amp; n &lt; 0.99) { amount = 0.005; }
+        else { amount = 0; }
+      }
+
+      n = clamp(n + amount, 0, 0.994);
+      return NProgress.set(n);
+    }
+  };
+  //...
+    /**
+   * Helpers
+   */
+
+  function clamp(n, min, max) {
+    if (n &lt; min) return min;
+    if (n &gt; max) return max;
+    return n;
+  }
+~~~
+</details>
+
+<p>&#x611F;&#x5174;&#x8DA3;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x770B;&#x770B;&#x6E90;&#x7801;&#x5B66;&#x4E60;&#x5B66;&#x4E60;&#xFF01;<a href="https://github.com/rstacruz/nprogress/blob/master/nprogress.js" target="_blank">&#x261E;nprogress.js</a></p>
+<h3 id="iframe&#x7684;&#x652F;&#x6301;"><a name="iframe&#x7684;&#x652F;&#x6301;" class="anchor-navigation-ex-anchor" href="#iframe&#x7684;&#x652F;&#x6301;"><i class="fa fa-link" aria-hidden="true"></i></a>iframe&#x7684;&#x652F;&#x6301;</h3>
+<p>&#x5728;d2-admin&#x4E2D;&#xFF0C;&#x5176;&#x5B9E;&#x662F;&#x6709;&#x5B9E;&#x73B0;iframe&#x7C7B;&#x578B;&#x7684;&#x5185;&#x5BB9;&#x9875;&#x7EC4;&#x4EF6;&#x7684;-- <a href="https://github.com/d2-projects/d2-admin/blob/804dbed41082669b1737b97d47cb481e372766ef/src/components/d2-container-frame/index.vue" target="_blank">d2-container-frame</a>,&#x4ECE;&#x6E90;&#x7801;&#x6765;&#x770B;&#xFF0C;&#x662F;iframe&#x662F;&#x5D4C;&#x5957;&#x5728;d2-container&#x7EC4;&#x4EF6;&#x4E2D;&#x7684;&#xFF0C;&#x5229;&#x7528;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x5B9E;&#x73B0;iframe&#x5145;&#x6EE1;d2-container&#x76D2;&#x5B50;&#x3002;</p>
+<details>
+       <summary>d2-container-frame&#x7B80;&#x5355;&#x5B9E;&#x73B0;</summary>
+
+~~~js
+<template>
+  <d2-container v-bind="$attrs">
+    <iframe class="d2-container-frame" :src="src" frameborder="0">
+  </iframe></d2-container>
+</template>
+
+<script>
+export default {
+  name: 'd2-container-frame',
+  props: {
+    src: {
+      type: String,
+      required: false,
+      default: 'https://doc.d2admin.fairyever.com/zh/'
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.d2-container-frame {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+</style>
+~~~
+</details>
+
+<p>&#x5728;&#x6539;&#x9020;renren&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x5927;&#x4F6C;&#x5DE7;&#x5999;&#x7684;&#x5229;&#x7528;&#x7EC4;&#x88C5;route&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;iframe&#x5355;&#x72EC;&#x6E32;&#x67D3;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x4EE5;&#x770B;&#x4E0B;&#x6E90;&#x7801;&#xFF1A;<a href="https://github.com/d2-projects/d2-admin-renren-security-enterprise/commit/ab986b4e52f9309622da5e64e7f0e02c13062308" target="_blank">&#x261E;&#x652F;&#x6301; iframe &#x52A0;&#x8F7D;&#x65B9;&#x5F0F;</a>&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// ...</span>
+<span class="token comment">// &#x7EC4;&#x88C5;&#x8DEF;&#x7531;</span>
+<span class="token keyword">var</span> route <span class="token operator">=</span> <span class="token punctuation">{</span>
+  path<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+  component<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  name<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+  meta<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>window<span class="token punctuation">.</span><span class="token constant">SITE_CONFIG</span><span class="token punctuation">[</span><span class="token string">&apos;contentTabDefault&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    menuId<span class="token punctuation">:</span> menuList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token punctuation">,</span>
+    title<span class="token punctuation">:</span> menuList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>name
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// ...</span>
+route<span class="token punctuation">[</span><span class="token string">&apos;path&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> route<span class="token punctuation">[</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token template-string"><span class="token string">`i-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>menuList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span>
+route<span class="token punctuation">[</span><span class="token string">&apos;meta&apos;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&apos;iframeURL&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token constant">URL</span>
+route<span class="token punctuation">[</span><span class="token string">&apos;component&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span> <span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">&apos;d2-container&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+      <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">&apos;iframe&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          position<span class="token punctuation">:</span> <span class="token string">&apos;absolute&apos;</span><span class="token punctuation">,</span>
+          top<span class="token punctuation">:</span> <span class="token string">&apos;0px&apos;</span><span class="token punctuation">,</span>
+          left<span class="token punctuation">:</span> <span class="token string">&apos;0px&apos;</span><span class="token punctuation">,</span>
+          height<span class="token punctuation">:</span> <span class="token string">&apos;100%&apos;</span><span class="token punctuation">,</span>
+          width<span class="token punctuation">:</span> <span class="token string">&apos;100%&apos;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        attrs<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          src<span class="token punctuation">:</span> <span class="token constant">URL</span><span class="token punctuation">,</span>
+          frameborder<span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// ...</span>
+</code></pre>
+<h3 id="&#x540E;&#x8BB0;"><a name="&#x540E;&#x8BB0;" class="anchor-navigation-ex-anchor" href="#&#x540E;&#x8BB0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540E;&#x8BB0;</h3>
+<p>&#x6E90;&#x7801;&#x867D;&#x7136;&#x6CA1;&#x6709;&#x7EC6;&#x770B;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD8;&#x662F;&#x6839;&#x636E;commits&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;&#xFF0C;&#x7C97;&#x7565;&#x7684;&#x4E00;&#x6B65;&#x4E00;&#x6B65;copy&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x756A;&#x3002;&#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#x8FD8;&#x662F;&#x5F88;&#x6709;&#x8DA3;&#x7684;&#xFF0C;&#x6BD5;&#x7ADF;&#x7B97;&#x662F;&#x53C2;&#x4E0E;&#x4E86;&#x5F00;&#x6E90;&#xFF0C;&#x8FD8;&#x7ED9;&#x5927;&#x4F6C;&#x63D0;&#x4E86;issue&#xFF0C;&#x6349;&#x4E86;bug&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x603B;&#x5F97;&#x6765;&#x8BF4;&#xFF0C;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x77E5;&#x8BC6;&#x70B9;&#x6CA1;&#x7EC6;&#x770B;&#xFF0C;&#x5982;vue&#x7684;mixins&#x3001;&#x4F17;&#x591A;&#x9875;&#x9762;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x3001;iconfont&#x7684;&#x4F7F;&#x7528;&#x3001;Vuex&#x7684;&#x4F7F;&#x7528;&#x3001;&#x81EA;&#x5B9A;&#x4E49;&#x76AE;&#x80A4;&#x7684;&#x5B9E;&#x73B0;&#x3001;&#x9876;&#x90E8;&#x83DC;&#x5355;&#x680F;&#x7684;&#x5B9E;&#x73B0;&#x7B49;&#x7B49;&#xFF0C;&#x671F;&#x95F4;&#x4E5F;&#x9047;&#x5230;&#x4E00;&#x4E9B;&#x7F16;&#x8BD1;&#x4E0A;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5982;el-table&#x7684;&#x5751;<a href="https://segmentfault.com/a/1190000019220574" target="_blank">&#x261E;Error: if there&apos;s nested data, rowKey is required.</a>&#x3002;&#x611F;&#x89C9;&#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#x8FD8;&#x5B66;&#x7684;&#x4E0D;&#x8E0F;&#x5B9E;&#xFF0C;&#x5F88;&#x591A;&#x77E5;&#x8BC6;&#x70B9;&#x53EA;&#x662F;&#x4E00;&#x641C;&#x5E26;&#x8FC7;&#xFF0C;&#x53EF;&#x80FD;&#x8FD8;&#x662F;&#x9879;&#x76EE;&#x505A;&#x5C11;&#x4E86;&#x3002;&#x8DEF;&#x6F2B;&#x6F2B;&#x5176;&#x4FEE;&#x8FDC;&#xFF0C;&#x6162;&#x6162;&#x6478;&#x7D22;&#x5427;&#x3002;
+HR&#x7684;&#x9886;&#x5BFC;&#x6765;&#x7535;&#x8BDD;&#x50AC;&#x56DE;&#x5BB6;&#x4E86;&#xFF0C;&#x5306;&#x5306;&#x843D;&#x7B14;&#xFF0C;&#x7ED3;&#x675F;&#x6B64;&#x7BC7;&#xFF0C;&#x6C5F;&#x6E56;&#x518D;&#x89C1;&#xFF01; </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; [huqi.me](https://www.huqi.me) 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-05-22 13:00:42
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="README.md" class="navigation navigation-prev " aria-label="Previous page: ☆ 我的倔金">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../my-blogs/blogs/node-sass-install-error.md" class="navigation navigation-next " aria-label="Next page: ✔ node-sass-install-error">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"✔ 记一次开源学习--D2Admin 人人企业版","level":"1.7.1.2.1","depth":4,"next":{"title":"✔ node-sass-install-error","level":"1.7.1.2.2","depth":4,"path":"other-library/my-blogs/blogs/node-sass-install-error.md","ref":"./other-library/my-blogs/blogs/node-sass-install-error.md","articles":[]},"previous":{"title":"☆ 我的倔金","level":"1.7.1.2","depth":3,"path":"other-library/blogs/my-blogs/README.md","ref":"./other-library/blogs/my-blogs/README.md","articles":[{"title":"✔ 记一次开源学习--D2Admin 人人企业版","level":"1.7.1.2.1","depth":4,"path":"other-library/blogs/my-blogs/d2-admin-renren-security-enterprise.md","ref":"./other-library/blogs/my-blogs/d2-admin-renren-security-enterprise.md","articles":[]},{"title":"✔ node-sass-install-error","level":"1.7.1.2.2","depth":4,"path":"other-library/my-blogs/blogs/node-sass-install-error.md","ref":"./other-library/my-blogs/blogs/node-sass-install-error.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex"],"styles":{"website":"./public-repertory/css/gitbook-configure.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy [huqi.me](https://www.huqi.me) 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"55e7dfe47f4dc1c018d4042fdfa62565"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://github.com/hu-qi/Loner/blob/master/public-repertory/img/seek-reward.jpg?raw=true","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://github.com/hu-qi/Loner/blob/master/public-repertory/img/seek-reward.png?raw=true","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"hu-qi","repo":"Loner","type":"star","count":true,"size":"small"},{"user":"hu-qi","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"胡琦 - huqi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loner(孤独者)","language":"zh-hans","gitbook":"*","description":"孤单，是一个人的狂欢；狂欢，是一群人的孤单。谨以此仓库，记录我（孤独者）的日常：工作、学习及其他"},"file":{"path":"other-library/blogs/my-blogs/d2-admin-renren-security-enterprise.md","mtime":"2019-05-22T05:00:42.581Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-22T05:00:47.396Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
