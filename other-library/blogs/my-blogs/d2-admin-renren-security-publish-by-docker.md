@@ -61,7 +61,6 @@ vi Dockerfile
 Dockerfile文件：
 ```
 FROM nginx
-COPY dist/  /usr/share/nginx/html/
 ```
 新建sh文件，如：
 ```
@@ -70,13 +69,17 @@ vi D2AdminRenren.sh
 .sh文件：
 ```
 docker run \
--p 4444:80 \
--d --name D2AdminRenren \
+-p 4443:80 \
+-d --name d2adminrenren \
 --mount type=bind,source=/home/huqi/d2-admin-renren-security-enterprise/nginx,target=/etc/nginx/conf.d \
 --mount type=bind,source=/home/huqi/d2-admin-renren-security-enterprise/dist,target=/usr/share/nginx/html \
 nginx
 ```
-docker build:
-```bash
-docker build -t d2adminrenren .
+部署静态资源：
 ```
+sh D2AdminRenren.sh
+```
+
+这就完事了？五秒真男人？我裤子都脱了，你就给我看这个？
+
+## 给nginx加buff--https
