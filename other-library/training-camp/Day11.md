@@ -19,3 +19,5 @@ assertTrue(x)	核实x为True
 assertFalse(x)	核实x为False
 assertIn(item,list)	核实item在list中
 assertNotIn(item,list)	核实item不在list中
+
+- setUp()，unittest.TestCase类包含方法setUp()，让我们只需创建这些对象一次，并在每个测试方法中使用它们。如果你在TestCase类中包含了方法setUp()，Python 将先运行它，再运行各个以 test_ 打头的方法。这样，在你编写的每个测试方法中都可使用在方法setUp()中创建的对象了。运行测试用例时，每完成一个单元测试，Python 都打印一个字符：测试通过时打印一个句点；测试引发错误时打印一个E；测试导致断言失败时打印一个F。这就是你运行测试用例时，在输出的第一行中看到的句点和字符数量各不相同的原因。如果测试用例包含很多单元测试，需要运行很长时间，就可通过观察这些结果来获悉有多少个测试通过了。
