@@ -29,3 +29,7 @@ yarn-error.log*
 *.sw*
 
 _book
+# Tuture-related files
+
+.tuture
+tuture-build
