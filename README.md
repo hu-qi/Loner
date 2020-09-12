@@ -1,5 +1,10 @@
 Loner - 孤独者
 ===
+![license](http://github.zhangqx.com/file-checker/github/hu-qi/Loner?path=LICENSE)
+![readme](http://github.zhangqx.com/file-checker/github/hu-qi/Loner?path=README.md)
+![contributing](http://github.zhangqx.com/file-checker/github/hu-qi/Loner?path=CONTRIBUTING.md)
+![coc](http://github.zhangqx.com/file-checker/github/hu-qi/Loner?path=CODE_OF_CONDUCT.md)
+
 * Loneliness, is a person's carnival; carnival , is a group of people's loneliness. I would like to use this repository to record my daily life: work, study and other!
 * 孤单，是一个人的狂欢；狂欢，是一群人的孤单。谨以此仓库，记录我（孤独者）的日常：工作、学习及其他！
 
